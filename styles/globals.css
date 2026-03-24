@@ -724,4 +724,10 @@ a {
   .book-btn {
     display: none;
   }
+  .hero-image {
+  position: absolute;
+  inset: 0;
+  background: url('/hero.jpg') center/cover no-repeat;
+  opacity: 0.25;
+}
 }
