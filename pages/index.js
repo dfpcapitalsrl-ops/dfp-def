@@ -94,7 +94,7 @@ export default function Home() {
               punctuality and style.
             </p>
 
-            <div className="hero-actions">
+            <div className="hero-image"></div>
               <a
                 className="btn btn-gold"
                 href="mailto:info@dfptravels.com?subject=Quote%20Request"
