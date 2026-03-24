@@ -54,15 +54,9 @@ export default function Home() {
     <main className="site-shell">
       <header className="site-header">
         <div className="container nav-bar">
-          <a href="#" className="brand">
-            <img src="/logo.png" alt="DFP Travels" style={{height: "48px"}} />
-            <div>
-              <div className="brand-title">DFP TRAVELS</div>
-              <div className="brand-subtitle">
-                Chauffeur Service &amp; Dolomites Tours
-              </div>
-            </div>
-          </a>
+        <a href="#" className="brand">
+  <img src="/logo.png" alt="DFP Travels" style={{ height: "60px" }} />
+</a>
 
           <nav className="nav-links">
             <a href="#services">Services</a>
