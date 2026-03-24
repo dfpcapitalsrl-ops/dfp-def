@@ -75,9 +75,7 @@ export default function Home() {
             <div className="eyebrow">Luxury private mobility in Northern Italy</div>
             <h1>Luxury Chauffeur Services & Exclusive Tours</h1>
             <p>
-              DFP Travels combines elegant ground transportation, tailored mountain
-              itineraries and high-end hospitality for travelers who expect comfort,
-              punctuality and style.
+              DFP Travels redefines private travel with luxury chauffeur services and bespoke experiences across Northern Italy, delivering elegance, comfort, and impeccable attention to detail in every journey.
             </p>
 
             <div className="hero-actions">
