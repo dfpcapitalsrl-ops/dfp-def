@@ -26,15 +26,6 @@ export default function Home() {
     },
   ];
 
-  const trustItems = [
-    "Luxury Hotels",
-    "Travel Designers",
-    "Private Guests",
-    "Wedding Planners",
-    "Corporate Clients",
-    "Concierge Teams",
-  ];
-
   const experiences = [
     {
       title: "Iconic Mountain Passes",
@@ -54,9 +45,9 @@ export default function Home() {
     <main className="site-shell">
       <header className="site-header">
         <div className="container nav-bar">
-        <a href="#" className="brand">
-  <img src="/logo.png" alt="DFP Travels" style={{ height: "60px" }} />
-</a>
+          <a href="#" className="brand">
+            <img src="/logo.png" alt="DFP Travels" style={{ height: "60px" }} />
+          </a>
 
           <nav className="nav-links">
             <a href="#services">Services</a>
@@ -75,7 +66,7 @@ export default function Home() {
       </header>
 
       <section className="hero-section">
-              <div className="hero-image"></div>
+        <div className="hero-image"></div>
         <div className="hero-bg hero-bg-left"></div>
         <div className="hero-bg hero-bg-right"></div>
 
@@ -167,22 +158,6 @@ export default function Home() {
                 <h3>{service.title}</h3>
                 <p>{service.text}</p>
               </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section trust-section">
-        <div className="container trust-wrap">
-          <div>
-            <div className="section-label">Trusted By</div>
-            <h2>Built to look credible for high-end hospitality partnerships.</h2>
-          </div>
-          <div className="trust-grid">
-            {trustItems.map((item) => (
-              <div className="trust-item" key={item}>
-                {item}
-              </div>
             ))}
           </div>
         </div>
