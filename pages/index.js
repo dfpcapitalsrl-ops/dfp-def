@@ -134,7 +134,7 @@ export default function Home() {
         <div className="container">
           <div className="section-head centered">
             <div className="section-label">Our Services</div>
-            <h2>Luxury ground transportation, curated with clarity.</h2>
+            <h2>Luxury Ground Transportation perfectly Tailored.</h2>
             <p>
               A stronger structure for premium clients, hospitality partners and
               international travelers looking for reliability and refinement.
