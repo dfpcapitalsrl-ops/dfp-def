@@ -729,5 +729,17 @@ a {
   inset: 0;
   background: url('/hero.jpg') center/cover no-repeat;
   opacity: 0.25;
+}.hero-image-box {
+  position: relative;
+  height: 300px;
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+.hero-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 }
