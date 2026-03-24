@@ -1,177 +1,295 @@
 export default function Home() {
-  return (
-    <main>
-      <header className="header">
-        <div className="container nav">
-          <div className="brand">
-            <div className="logoBox">DFP</div>
-            <div>
-              <div className="brandTitle">DFP TRAVELS</div>
-              <div className="brandSub">Chauffeur Service & Dolomites Tours</div>
-            </div>
-          </div>
+  const services = [
+    {
+      title: "Airport & Hotel Transfers",
+      text: "Luxury NCC transfers from airports, train stations, hotels, chalets and private villas with punctuality, discretion and executive comfort.",
+    },
+    {
+      title: "Dolomites Private Tours",
+      text: "Tailor-made panoramic experiences through the most iconic Dolomite destinations, with flexible stops and a premium private service.",
+    },
+    {
+      title: "Business & VIP Mobility",
+      text: "Dedicated ground transportation for events, corporate guests, luxury hospitality partners and international clientele.",
+    },
+    {
+      title: "Wedding & Special Events",
+      text: "Elegant chauffeur service for ceremonies, private events and curated guest mobility with refined presentation and reliability.",
+    },
+    {
+      title: "Luxury Day Experiences",
+      text: "From scenic drives to exclusive mountain itineraries, every journey is designed to feel seamless, private and memorable.",
+    },
+    {
+      title: "Concierge-Level Assistance",
+      text: "A hospitality-driven approach for clients who expect responsiveness, local knowledge and high-end service standards.",
+    },
+  ];
 
-          <nav className="menu">
-            <a href="#services">Servizi</a>
-            <a href="#about">Chi siamo</a>
-            <a href="#contact">Contatti</a>
+  const trustItems = [
+    "Luxury Hotels",
+    "Travel Designers",
+    "Private Guests",
+    "Wedding Planners",
+    "Corporate Clients",
+    "Concierge Teams",
+  ];
+
+  const experiences = [
+    {
+      title: "Iconic Mountain Passes",
+      text: "Refined private itineraries through the most scenic roads in the Dolomites.",
+    },
+    {
+      title: "Lakes & Panoramic Stops",
+      text: "Curated journeys for guests who want beauty, comfort and time to enjoy every view.",
+    },
+    {
+      title: "Tailor-Made Itineraries",
+      text: "Flexible experiences for couples, families, VIP travelers and international guests.",
+    },
+  ];
+
+  return (
+    <main className="site-shell">
+      <header className="site-header">
+        <div className="container nav-bar">
+          <a href="#" className="brand">
+            <div className="brand-mark">DFP</div>
+            <div>
+              <div className="brand-title">DFP TRAVELS</div>
+              <div className="brand-subtitle">
+                Chauffeur Service &amp; Dolomites Tours
+              </div>
+            </div>
+          </a>
+
+          <nav className="nav-links">
+            <a href="#services">Services</a>
+            <a href="#experiences">Experiences</a>
+            <a href="#about">Company</a>
+            <a href="#contact">Contact</a>
           </nav>
+
+          <a
+            className="book-btn"
+            href="mailto:info@dfptravels.com?subject=Quote%20Request"
+          >
+            Book Now
+          </a>
         </div>
       </header>
 
-      <section className="hero">
-        <div className="heroGlow heroGlowLeft"></div>
-        <div className="heroGlow heroGlowRight"></div>
+      <section className="hero-section">
+        <div className="hero-bg hero-bg-left"></div>
+        <div className="hero-bg hero-bg-right"></div>
 
-        <div className="container heroGrid">
-          <div>
-            <div className="badge">Luxury Chauffeur Service in the Dolomites</div>
-            <h1>Transfer privati e tour esclusivi nelle Dolomiti</h1>
-            <p className="heroText">
-              DFP Travels offre servizi NCC premium, transfer aeroportuali,
-              escursioni private e mobilità elegante per clienti italiani e internazionali.
+        <div className="container hero-grid">
+          <div className="hero-copy">
+            <div className="eyebrow">Luxury private mobility in the Dolomites</div>
+            <h1>Private chauffeur service with a stronger premium presence.</h1>
+            <p>
+              DFP Travels combines elegant ground transportation, tailored mountain
+              itineraries and high-end hospitality for travelers who expect comfort,
+              punctuality and style.
             </p>
 
-            <div className="heroButtons">
+            <div className="hero-actions">
               <a
-                className="btn btnGold"
-                href="mailto:info@dfptravels.com?subject=Richiesta%20preventivo%20DFP%20Travels"
+                className="btn btn-gold"
+                href="mailto:info@dfptravels.com?subject=Quote%20Request"
               >
-                Richiedi preventivo
+                Request a quote
               </a>
-
-              <a className="btn btnLight" href="https://wa.me/390000000000">
+              <a className="btn btn-outline" href="https://wa.me/390000000000">
                 WhatsApp
               </a>
             </div>
 
-            <div className="features">
-              <div className="feature">Transfer aeroporti</div>
-              <div className="feature">Tour Dolomiti</div>
-              <div className="feature">Servizio business & VIP</div>
+            <div className="hero-highlights">
+              <span>Airport transfers</span>
+              <span>Luxury day tours</span>
+              <span>VIP &amp; business service</span>
             </div>
           </div>
 
-          <div className="visualCard">
-            <div className="visualTop">
-              <span>DFP TRAVELS</span>
-              <span className="pill">Premium</span>
-            </div>
+          <div className="hero-card">
+            <div className="hero-card-inner">
+              <div className="hero-card-top">
+                <div>
+                  <div className="mini-label">DFP TRAVELS</div>
+                  <div className="mini-title">Dolomites Premium Mobility</div>
+                </div>
+                <div className="mini-pill">Private Service</div>
+              </div>
 
-            <div className="scene">
-              <div className="sun"></div>
-              <div className="mountain mountain1"></div>
-              <div className="mountain mountain2"></div>
-              <div className="road"></div>
-              <div className="van">
-                <div className="window"></div>
-                <div className="wheel wheel1"></div>
-                <div className="wheel wheel2"></div>
+              <div className="hero-scene">
+                <div className="scene-sun"></div>
+                <div className="scene-mountain one"></div>
+                <div className="scene-mountain two"></div>
+                <div className="scene-road"></div>
+                <div className="scene-van">
+                  <div className="scene-window"></div>
+                  <div className="scene-wheel left"></div>
+                  <div className="scene-wheel right"></div>
+                </div>
               </div>
-            </div>
 
-            <div className="visualBottom">
-              <div className="smallCard">
-                <small>Service</small>
-                <strong>NCC</strong>
-              </div>
-              <div className="smallCard">
-                <small>Area</small>
-                <strong>Dolomites</strong>
-              </div>
-              <div className="smallCard">
-                <small>Style</small>
-                <strong>Luxury</strong>
+              <div className="mini-grid">
+                <div className="mini-box">
+                  <small>Transfers</small>
+                  <strong>Airports</strong>
+                </div>
+                <div className="mini-box">
+                  <small>Tours</small>
+                  <strong>Dolomites</strong>
+                </div>
+                <div className="mini-box">
+                  <small>Style</small>
+                  <strong>Luxury</strong>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="services" className="section">
+      <section id="services" className="section section-white">
         <div className="container">
-          <div className="sectionLabel">Servizi</div>
-          <h2>Un sito pensato per clienti premium</h2>
-          <p className="sectionText">
-            Presentazione elegante, chiara e professionale per valorizzare il tuo servizio.
-          </p>
+          <div className="section-head centered">
+            <div className="section-label">Our Services</div>
+            <h2>Luxury ground transportation, curated with clarity.</h2>
+            <p>
+              A stronger structure for premium clients, hospitality partners and
+              international travelers looking for reliability and refinement.
+            </p>
+          </div>
 
-          <div className="cards">
-            <div className="card">
-              <div className="cardIcon">✦</div>
-              <h3>Transfer aeroportuali</h3>
-              <p>Collegamenti puntuali da e per aeroporti, hotel, stazioni e località turistiche.</p>
-            </div>
-
-            <div className="card">
-              <div className="cardIcon">✦</div>
-              <h3>Tour privati</h3>
-              <p>Escursioni esclusive nelle Dolomiti con soste panoramiche e itinerari su misura.</p>
-            </div>
-
-            <div className="card">
-              <div className="cardIcon">✦</div>
-              <h3>Servizio business</h3>
-              <p>Mobilità executive per meeting, eventi, ospiti internazionali e clientela VIP.</p>
-            </div>
+          <div className="service-grid">
+            {services.map((service) => (
+              <article className="service-card" key={service.title}>
+                <div className="service-icon">✦</div>
+                <h3>{service.title}</h3>
+                <p>{service.text}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
-      <section id="about" className="section sectionAlt">
-        <div className="container twoCols">
+      <section className="section trust-section">
+        <div className="container trust-wrap">
           <div>
-            <div className="sectionLabel">Chi siamo</div>
-            <h2>Immagine corporate, spirito hospitality</h2>
-            <p className="sectionText">
-              Il layout usa una palette elegante con blu notte, oro e bianco, per trasmettere
-              lusso, affidabilità e qualità del servizio.
+            <div className="section-label">Trusted By</div>
+            <h2>Built to look credible for high-end hospitality partnerships.</h2>
+          </div>
+          <div className="trust-grid">
+            {trustItems.map((item) => (
+              <div className="trust-item" key={item}>
+                {item}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="experiences" className="section alt-section">
+        <div className="container">
+          <div className="section-head split">
+            <div>
+              <div className="section-label">Experiences</div>
+              <h2>Scenic itineraries with a hospitality-first feel.</h2>
+            </div>
+            <p>
+              The journey should feel curated, not just booked. These sections
+              position DFP Travels as a premium local specialist for bespoke travel
+              in the Dolomites.
             </p>
           </div>
 
-          <div className="statsBox">
-            <div className="stat">
+          <div className="experience-grid">
+            {experiences.map((experience, index) => (
+              <article className="experience-card" key={experience.title}>
+                <div className={`experience-visual visual-${index + 1}`}>
+                  <div className="experience-inner"></div>
+                </div>
+                <div className="experience-body">
+                  <h3>{experience.title}</h3>
+                  <p>{experience.text}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="about" className="section section-white">
+        <div className="container about-grid">
+          <div>
+            <div className="section-label">Company</div>
+            <h2>Luxury branding, stronger hierarchy, more corporate confidence.</h2>
+            <p className="muted">
+              This version pushes a more refined balance between elegance and
+              readability: more whitespace, stronger typography, cleaner sections
+              and clearer conversion paths.
+            </p>
+          </div>
+
+          <div className="about-panel">
+            <div className="about-stat">
               <strong>24/7</strong>
-              <span>Disponibilità</span>
+              <span>Availability</span>
             </div>
-            <div className="stat">
+            <div className="about-stat">
               <strong>VIP</strong>
-              <span>Esperienza premium</span>
+              <span>Premium Service</span>
             </div>
-            <div className="stat wide">
-              <strong>Dolomites</strong>
-              <span>Tour su misura, transfer eleganti e accoglienza professionale</span>
+            <div className="about-stat wide">
+              <strong>Tailor-Made</strong>
+              <span>
+                Airport transfers, luxury tours and executive mobility with
+                personalized support.
+              </span>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="contact" className="contact">
-        <div className="container contactGrid">
+      <section id="contact" className="section contact-section">
+        <div className="container contact-grid">
           <div>
-            <div className="sectionLabel light">Contatti</div>
-            <h2>Pronto per ricevere clienti online</h2>
-            <p className="contactText">
-              Inserisci qui il tuo numero reale, email definitiva, logo finale e foto professionali.
+            <div className="section-label light">Contact</div>
+            <h2>Ready to turn this into your final premium website?</h2>
+            <p className="contact-copy">
+              Replace the placeholder details with your real WhatsApp number,
+              business email, final logo and real photography to publish a stronger
+              luxury brand presence.
             </p>
 
-            <div className="contactInfo">
-              <div><strong>Email:</strong> info@dfptravels.com</div>
-              <div><strong>Telefono:</strong> +39 000 000 0000</div>
-              <div><strong>WhatsApp:</strong> +39 000 000 0000</div>
+            <div className="contact-meta">
+              <div>
+                <strong>Email:</strong> info@dfptravels.com
+              </div>
+              <div>
+                <strong>Phone:</strong> +39 000 000 0000
+              </div>
+              <div>
+                <strong>WhatsApp:</strong> +39 000 000 0000
+              </div>
             </div>
           </div>
 
-          <div className="contactCard">
-            <div className="fakeInput">Nome cliente</div>
-            <div className="fakeInput">Email</div>
-            <div className="fakeInput big">Richiesta transfer / tour / servizio VIP</div>
-
+          <div className="contact-form-card">
+            <div className="field-placeholder">Name</div>
+            <div className="field-placeholder">Email</div>
+            <div className="field-placeholder large">
+              Transfer, tour request, hotel partnership, VIP service...
+            </div>
             <a
-              className="btn btnGold full"
-              href="mailto:info@dfptravels.com?subject=Richiesta%20preventivo%20DFP%20Travels"
+              className="btn btn-gold full-width"
+              href="mailto:info@dfptravels.com?subject=Quote%20Request"
             >
-              Invia richiesta
+              Send request
             </a>
           </div>
         </div>
