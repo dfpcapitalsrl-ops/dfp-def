@@ -81,6 +81,7 @@ export default function Home() {
       </header>
 
       <section className="hero-section">
+              <div className="hero-image"></div>
         <div className="hero-bg hero-bg-left"></div>
         <div className="hero-bg hero-bg-right"></div>
 
