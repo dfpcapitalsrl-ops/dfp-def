@@ -109,17 +109,9 @@ export default function Home() {
                 <div className="mini-pill">Private Service</div>
               </div>
 
-              <div className="hero-scene">
-                <div className="scene-sun"></div>
-                <div className="scene-mountain one"></div>
-                <div className="scene-mountain two"></div>
-                <div className="scene-road"></div>
-                <div className="scene-van">
-                  <div className="scene-window"></div>
-                  <div className="scene-wheel left"></div>
-                  <div className="scene-wheel right"></div>
-                </div>
-              </div>
+             <div className="hero-image-box">
+  <img src="/hero-car.jpg" alt="DFP Travels" />
+</div>
 
               <div className="mini-grid">
                 <div className="mini-box">
