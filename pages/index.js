@@ -55,7 +55,11 @@ export default function Home() {
       <header className="site-header">
         <div className="container nav-bar">
           <a href="#" className="brand">
-            <img src="/WhatsApp Image 2026-03-24 at 12.15.25_preview_rev_1.png" alt="DFP Travels" style={{height: "48px"}} />
+            <img
+              src="/logo.png"
+              alt="DFP Travels"
+              style={{ height: "56px", width: "auto", display: "block" }}
+            />
             <div>
               <div className="brand-title">DFP TRAVELS</div>
               <div className="brand-subtitle">
@@ -94,7 +98,7 @@ export default function Home() {
               punctuality and style.
             </p>
 
-            <div className="hero-image"></div>
+            <div className="hero-actions">
               <a
                 className="btn btn-gold"
                 href="mailto:info@dfptravels.com?subject=Quote%20Request"
@@ -114,40 +118,38 @@ export default function Home() {
           </div>
 
           <div className="hero-card">
-            <div className="hero-card-inner">
-              <div className="hero-card-top">
-                <div>
-                  <div className="mini-label">DFP TRAVELS</div>
-                  <div className="mini-title">Dolomites Premium Mobility</div>
-                </div>
-                <div className="mini-pill">Private Service</div>
+            <div className="hero-card-top">
+              <div>
+                <div className="mini-label">DFP TRAVELS</div>
+                <div className="mini-title">Dolomites Premium Mobility</div>
               </div>
+              <div className="mini-pill">Private Service</div>
+            </div>
 
-              <div className="hero-scene">
-                <div className="scene-sun"></div>
-                <div className="scene-mountain one"></div>
-                <div className="scene-mountain two"></div>
-                <div className="scene-road"></div>
-                <div className="scene-van">
-                  <div className="scene-window"></div>
-                  <div className="scene-wheel left"></div>
-                  <div className="scene-wheel right"></div>
-                </div>
+            <div className="hero-scene">
+              <div className="scene-sun"></div>
+              <div className="scene-mountain one"></div>
+              <div className="scene-mountain two"></div>
+              <div className="scene-road"></div>
+              <div className="scene-van">
+                <div className="scene-window"></div>
+                <div className="scene-wheel left"></div>
+                <div className="scene-wheel right"></div>
               </div>
+            </div>
 
-              <div className="mini-grid">
-                <div className="mini-box">
-                  <small>Transfers</small>
-                  <strong>Airports</strong>
-                </div>
-                <div className="mini-box">
-                  <small>Tours</small>
-                  <strong>Dolomites</strong>
-                </div>
-                <div className="mini-box">
-                  <small>Style</small>
-                  <strong>Luxury</strong>
-                </div>
+            <div className="mini-grid">
+              <div className="mini-box">
+                <small>Transfers</small>
+                <strong>Airports</strong>
+              </div>
+              <div className="mini-box">
+                <small>Tours</small>
+                <strong>Dolomites</strong>
+              </div>
+              <div className="mini-box">
+                <small>Style</small>
+                <strong>Luxury</strong>
               </div>
             </div>
           </div>
@@ -180,9 +182,10 @@ export default function Home() {
       <section className="section trust-section">
         <div className="container trust-wrap">
           <div>
-            <div className="section-label">Trusted By</div>
+            <div className="section-label light">Trusted By</div>
             <h2>Built to look credible for high-end hospitality partnerships.</h2>
           </div>
+
           <div className="trust-grid">
             {trustItems.map((item) => (
               <div className="trust-item" key={item}>
