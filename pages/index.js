@@ -73,7 +73,7 @@ export default function Home() {
         <div className="container hero-grid">
           <div className="hero-copy">
             <div className="eyebrow">Luxury private mobility in Northern Italy</div>
-            <h1>Private chauffeur service with a stronger premium presence.</h1>
+            <h1>Luxury Chauffeur Services & Exclusive Tours</h1>
             <p>
               DFP Travels combines elegant ground transportation, tailored mountain
               itineraries and high-end hospitality for travelers who expect comfort,
