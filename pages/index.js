@@ -160,7 +160,7 @@ export default function Home() {
           <div className="section-head split">
             <div>
               <div className="section-label">Experiences</div>
-              <h2>Scenic itineraries with a hospitality-first feel.</h2>
+              <h2>Travel in Style. Discover in Comfort.</h2>
             </div>
             <p>
               The journey should feel curated, not just booked. These sections
