@@ -2,19 +2,19 @@ export default function Home() {
   const services = [
     {
       title: "Airport & Hotel Transfers",
-      text: "Luxury NCC transfers from airports, train stations, hotels and private villas with punctuality and comfort.",
+      text: "Luxury NCC transfers from airports, hotels and stations with punctuality and comfort.",
     },
     {
       title: "Dolomites Private Tours",
-      text: "Exclusive panoramic experiences through the most iconic Dolomite locations.",
+      text: "Exclusive panoramic tours in the Dolomites with tailor-made itineraries.",
     },
     {
       title: "Business & VIP Mobility",
-      text: "Executive transport for events, corporate guests and premium clients.",
+      text: "Executive transport for events, hotels and premium clients.",
     },
     {
-      title: "Wedding & Events",
-      text: "Elegant chauffeur service for weddings and special occasions.",
+      title: "Wedding & Special Events",
+      text: "Elegant chauffeur service for ceremonies and private events.",
     },
     {
       title: "Luxury Experiences",
@@ -33,21 +33,19 @@ export default function Home() {
       <header className="site-header">
         <div className="container nav-bar">
           
-          {/* SOLO LOGO (MODIFICA QUI) */}
+          {/* SOLO LOGO */}
           <a href="#" className="brand">
             <img src="/logo.png" alt="DFP Travels" className="logo" />
           </a>
 
           <nav className="nav-links">
             <a href="#services">Services</a>
+            <a href="#experiences">Experiences</a>
             <a href="#about">Company</a>
             <a href="#contact">Contact</a>
           </nav>
 
-          <a
-            className="book-btn"
-            href="https://wa.me/393000000000"
-          >
+          <a className="book-btn" href="https://wa.me/393000000000">
             Book Now
           </a>
         </div>
@@ -61,10 +59,10 @@ export default function Home() {
         <div className="container hero-grid">
           <div className="hero-copy">
             <div className="eyebrow">Luxury private mobility in the Dolomites</div>
-            <h1>Private chauffeur service with a premium experience</h1>
+            <h1>Private chauffeur service with premium experience</h1>
             <p>
-              DFP Travels offers elegant transfers, exclusive tours and
-              high-end mobility for clients who expect comfort, punctuality and style.
+              DFP Travels offers elegant transfers, exclusive tours and high-end mobility
+              for clients who expect comfort, punctuality and style.
             </p>
 
             <div className="hero-actions">
@@ -74,6 +72,12 @@ export default function Home() {
               <a className="btn-outline" href="https://wa.me/393000000000">
                 WhatsApp
               </a>
+            </div>
+
+            <div className="hero-highlights">
+              <span>Airport transfers</span>
+              <span>Luxury tours</span>
+              <span>VIP service</span>
             </div>
           </div>
 
@@ -85,7 +89,7 @@ export default function Home() {
       </section>
 
       {/* SERVICES */}
-      <section id="services" className="section">
+      <section id="services" className="section section-white">
         <div className="container">
           <div className="section-label">Our Services</div>
           <h2>Luxury ground transportation</h2>
@@ -93,6 +97,7 @@ export default function Home() {
           <div className="service-grid">
             {services.map((s) => (
               <div className="service-card" key={s.title}>
+                <div className="service-icon">✦</div>
                 <h3>{s.title}</h3>
                 <p>{s.text}</p>
               </div>
@@ -101,8 +106,33 @@ export default function Home() {
         </div>
       </section>
 
+      {/* EXPERIENCES */}
+      <section id="experiences" className="section alt-section">
+        <div className="container">
+          <div className="section-label">Experiences</div>
+          <h2>Discover the Dolomites</h2>
+
+          <div className="experience-grid">
+            <div className="experience-card">
+              <div className="experience-inner"></div>
+              <h3>Mountain Passes</h3>
+            </div>
+
+            <div className="experience-card">
+              <div className="experience-inner"></div>
+              <h3>Lakes & Views</h3>
+            </div>
+
+            <div className="experience-card">
+              <div className="experience-inner"></div>
+              <h3>Tailor-made Tours</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ABOUT */}
-      <section id="about" className="section alt-section">
+      <section id="about" className="section section-white">
         <div className="container">
           <div className="section-label">Company</div>
           <h2>Professional, reliable, premium</h2>
@@ -122,10 +152,7 @@ export default function Home() {
           <p>Email: info@dfptravels.com</p>
           <p>Phone: +39 300 000 0000</p>
 
-          <a
-            className="btn-gold"
-            href="https://wa.me/393000000000"
-          >
+          <a className="btn-gold" href="https://wa.me/393000000000">
             Contact on WhatsApp
           </a>
         </div>
