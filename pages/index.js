@@ -55,7 +55,7 @@ export default function Home() {
       <header className="site-header">
         <div className="container nav-bar">
           <a href="#" className="brand">
-            <img src="/logo.png" alt="DFP Travels" style={{height: "48px"}} />
+            <img src="/WhatsApp Image 2026-03-24 at 12.15.25_preview_rev_1.png" alt="DFP Travels" style={{height: "48px"}} />
             <div>
               <div className="brand-title">DFP TRAVELS</div>
               <div className="brand-subtitle">
