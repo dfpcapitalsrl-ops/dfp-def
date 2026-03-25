@@ -210,6 +210,36 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="water-taxi" className="section alt-section">
+        <div className="container water-taxi-grid">
+          <div className="water-taxi-copy">
+            <div className="section-label">Water Taxi</div>
+            <h2>Exclusive water transfers with the same comfort and elegance.</h2>
+            <p>
+              Extend the DFP Travels experience beyond the road with refined private
+              water taxi services, ideal for luxury arrivals, hotel connections,
+              special occasions and tailor-made journeys in iconic lake destinations.
+            </p>
+            <p>
+              Designed for guests who expect privacy, punctuality and a seamless
+              premium standard from start to finish.
+            </p>
+            <div className="water-taxi-actions">
+              <a
+                className="btn btn-gold"
+                href="mailto:info@dfptravels.com?subject=Water%20Taxi%20Request"
+              >
+                Request water taxi
+              </a>
+            </div>
+          </div>
+
+          <div className="water-taxi-visual">
+            <img src="/water-taxi.jpg" alt="Luxury Water Taxi" className="water-taxi-image" />
+          </div>
+        </div>
+      </section>
+
       <section id="services" className="section section-white">
         <div className="container">
           <div className="section-head centered">
