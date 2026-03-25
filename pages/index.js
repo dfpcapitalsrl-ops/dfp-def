@@ -102,7 +102,7 @@ export default function Home() {
               <div className="hero-card-top">
                 <div>
                   <div className="mini-label">DFP TRAVELS</div>
-                  <div className="mini-title">Private Premium Mobility</div>
+                  <div className="mini-title">Premium Transfers</div>
                 </div>
                 <div className="mini-pill">Top Class Service</div>
               </div>
