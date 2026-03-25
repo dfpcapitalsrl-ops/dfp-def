@@ -190,7 +190,8 @@ a {
 .section-head h2,
 .about-grid h2,
 .contact-grid h2,
-.trust-wrap h2 {
+.trust-wrap h2,
+.water-taxi-copy h2 {
   margin: 0;
   font-size: 58px;
   line-height: 1.05;
@@ -201,7 +202,8 @@ a {
 .section-head h2,
 .about-grid h2,
 .contact-grid h2,
-.trust-wrap h2 {
+.trust-wrap h2,
+.water-taxi-copy h2 {
   font-size: 40px;
 }
 
@@ -210,7 +212,8 @@ a {
 .service-card p,
 .experience-body p,
 .muted,
-.contact-copy {
+.contact-copy,
+.water-taxi-copy p {
   color: var(--navy);
   line-height: 1.8;
   font-size: 18px;
