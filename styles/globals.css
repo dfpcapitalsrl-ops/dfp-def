@@ -267,19 +267,25 @@ a {
   color: var(--navy);
 }
 
+/* HERO BOX CORRETTO DAVVERO */
 .hero-card {
   border-radius: 34px;
-  padding: 16px;
+  padding: 20px;
   background: linear-gradient(145deg, var(--navy), var(--navy-2) 58%, #31497e);
   color: white;
   box-shadow: 0 30px 80px rgba(20, 42, 92, 0.18);
   max-width: 560px;
   width: 100%;
+  min-height: 500px;
   margin-left: auto;
+  display: flex;
 }
 
 .hero-card-inner {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .hero-card-top {
@@ -287,7 +293,7 @@ a {
   justify-content: space-between;
   align-items: flex-start;
   gap: 12px;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 
 .mini-label {
@@ -657,6 +663,38 @@ a {
   font-weight: 700;
 }
 
+/* ===== WATER TAXI SECTION ===== */
+
+.water-taxi-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 36px;
+  align-items: center;
+}
+
+.water-taxi-copy p {
+  margin: 0 0 18px;
+}
+
+.water-taxi-actions {
+  margin-top: 26px;
+}
+
+.water-taxi-visual {
+  overflow: hidden;
+  border-radius: 30px;
+  border: 1px solid var(--line);
+  background: white;
+  box-shadow: 0 16px 34px rgba(20, 42, 92, 0.06);
+}
+
+.water-taxi-image {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
@@ -755,9 +793,10 @@ a {
 
 .hero-image-box {
   position: relative;
-  height: 220px;
+  height: 340px;
   border-radius: 28px;
   overflow: hidden;
+  margin-top: 6px;
 }
 
 .hero-image-box img {
@@ -774,7 +813,8 @@ a {
   .experience-grid,
   .about-grid,
   .contact-grid,
-  .section-head.split {
+  .section-head.split,
+  .water-taxi-grid {
     grid-template-columns: 1fr;
   }
 
@@ -794,16 +834,22 @@ a {
   .section-head h2,
   .about-grid h2,
   .contact-grid h2,
-  .trust-wrap h2 {
+  .trust-wrap h2,
+  .water-taxi-copy h2 {
     font-size: 34px;
   }
 
   .hero-card {
     max-width: 100%;
+    min-height: auto;
   }
 
   .fleet-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .water-taxi-image {
+    height: 320px;
   }
 }
 
@@ -828,7 +874,8 @@ a {
   .service-card p,
   .experience-body p,
   .muted,
-  .contact-copy {
+  .contact-copy,
+  .water-taxi-copy p {
     font-size: 16px;
   }
 
@@ -841,11 +888,15 @@ a {
   }
 
   .hero-image-box {
-    height: 190px;
+    height: 240px;
   }
 
   .fleet-image-wrap {
     height: 220px;
+  }
+
+  .water-taxi-image {
+    height: 240px;
   }
 
   .eyebrow,
