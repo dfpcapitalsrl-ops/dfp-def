@@ -468,9 +468,9 @@ a {
   text-align: center;
 }
 
-.section-head.centered h2,
 .section-head.centered p {
-  white-space: nowrap;
+  max-width: 900px;
+  margin: 20px auto 0;
 }
 
 .section-head.split {
@@ -736,11 +736,6 @@ a {
 
   .hero-card {
     max-width: 100%;
-  }
-
-  .section-head.centered h2,
-  .section-head.centered p {
-    white-space: normal;
   }
 }
 
