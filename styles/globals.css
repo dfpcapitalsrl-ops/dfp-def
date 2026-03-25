@@ -565,6 +565,7 @@ a {
 .experience-visual {
   height: 220px;
   padding: 18px;
+  overflow: hidden;
 }
 
 .visual-1 {
@@ -577,6 +578,14 @@ a {
 
 .visual-3 {
   background: linear-gradient(135deg, #fff6e1, #ffffff, #dde6fb);
+}
+
+.experience-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 22px;
 }
 
 .experience-inner {
