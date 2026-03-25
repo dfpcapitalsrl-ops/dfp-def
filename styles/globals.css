@@ -266,11 +266,11 @@ a {
 
 .hero-card {
   border-radius: 34px;
-  padding: 16px;
+  padding: 20px;
   background: linear-gradient(145deg, var(--navy), var(--navy-2) 58%, #31497e);
   color: white;
   box-shadow: 0 30px 80px rgba(20, 42, 92, 0.18);
-  max-width: 640px;
+  max-width: 560px;
   width: 100%;
   margin-left: auto;
 }
