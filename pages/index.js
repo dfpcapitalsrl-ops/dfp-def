@@ -21,7 +21,7 @@ export default function Home() {
       text: "From scenic drives to exclusive mountain itineraries, every journey is designed to feel seamless, private and memorable.",
     },
     {
-      title: "Concierge-Level Assistance",
+      title: "Premium Client Assistance",
       text: "A hospitality-driven approach for clients who expect responsiveness, local knowledge and high-end service standards.",
     },
   ];
