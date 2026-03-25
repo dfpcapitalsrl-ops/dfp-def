@@ -41,6 +41,8 @@ export default function Home() {
     },
   ];
 
+  const experienceImages = ["/verona.jpg", "/dolomiti.jpg", "/prosecco.jpg"];
+
   return (
     <main className="site-shell">
       <header className="site-header">
@@ -166,7 +168,11 @@ export default function Home() {
             {experiences.map((experience, index) => (
               <article className="experience-card" key={experience.title}>
                 <div className={`experience-visual visual-${index + 1}`}>
-                  <div className="experience-inner"></div>
+                  <img
+                    src={experienceImages[index]}
+                    alt={experience.title}
+                    className="experience-photo"
+                  />
                 </div>
                 <div className="experience-body">
                   <h3>{experience.title}</h3>
