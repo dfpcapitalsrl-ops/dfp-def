@@ -40,16 +40,18 @@ a {
 }
 
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 50;
-  background: rgba(255, 255, 255, 0.92);
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(20, 42, 92, 0.08);
 }
 
 .nav-bar {
-  min-height: 82px;
+  min-height: 88px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -91,9 +93,15 @@ a {
 
 .nav-links {
   display: flex;
-  gap: 24px;
+  align-items: center;
+  gap: 34px;
   color: var(--charcoal);
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-links a {
+  transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
@@ -104,21 +112,26 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 46px;
-  padding: 0 18px;
-  border-radius: 14px;
-  background: var(--navy);
-  color: #ffffff;
+  min-height: 52px;
+  padding: 0 24px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+  color: white;
   font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  box-shadow: 0 10px 25px rgba(217, 161, 58, 0.25);
+  transition: all 0.25s ease;
 }
 
 .book-btn:hover {
-  background: var(--navy-2);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 35px rgba(217, 161, 58, 0.35);
 }
 
 .hero-section {
   position: relative;
-  padding: 78px 0 90px;
+  padding: 140px 0 90px;
   background:
     radial-gradient(circle at top left, rgba(240, 193, 93, 0.18), transparent 30%),
     radial-gradient(circle at top right, rgba(36, 59, 115, 0.10), transparent 28%),
