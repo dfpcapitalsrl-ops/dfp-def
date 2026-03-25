@@ -154,11 +154,9 @@ export default function Home() {
 
       <section id="experiences" className="section alt-section">
         <div className="container">
-          <div className="section-head split">
-            <div>
-              <div className="section-label">Experiences</div>
-              <h2>Travel in Style. Discover in Comfort.</h2>
-            </div>
+          <div className="section-head centered">
+            <div className="section-label">Experiences</div>
+            <h2>Travel in Style. Discover in Comfort.</h2>
             <p>
               The journey should feel curated, not just booked. These sections
               position DFP Travels as a premium local specialist for bespoke travel
