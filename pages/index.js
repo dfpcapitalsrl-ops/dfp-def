@@ -43,6 +43,29 @@ export default function Home() {
 
   const experienceImages = ["/verona.jpg", "/dolomiti.jpg", "/prosecco.jpg"];
 
+  const fleet = [
+    {
+      name: "Mercedes V-Class",
+      image: "/fleet-1.jpg",
+    },
+    {
+      name: "Mercedes E-Class",
+      image: "/fleet-2.jpg",
+    },
+    {
+      name: "Luxury Van",
+      image: "/fleet-3.jpg",
+    },
+    {
+      name: "Executive Sedan",
+      image: "/fleet-4.jpg",
+    },
+    {
+      name: "Premium Shuttle",
+      image: "/fleet-5.jpg",
+    },
+  ];
+
   return (
     <main className="site-shell">
       <header className="site-header">
@@ -177,6 +200,32 @@ export default function Home() {
                 <div className="experience-body">
                   <h3>{experience.title}</h3>
                   <p>{experience.text}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="fleet" className="section section-white">
+        <div className="container">
+          <div className="section-head centered">
+            <div className="section-label">Our Fleet</div>
+            <h2>Vehicles selected for comfort, elegance and reliability.</h2>
+            <p>
+              A premium fleet designed for airport transfers, private tours, VIP service
+              and bespoke travel experiences across Northern Italy.
+            </p>
+          </div>
+
+          <div className="fleet-grid">
+            {fleet.map((vehicle) => (
+              <article className="fleet-card" key={vehicle.name}>
+                <div className="fleet-image-wrap">
+                  <img src={vehicle.image} alt={vehicle.name} className="fleet-image" />
+                </div>
+                <div className="fleet-body">
+                  <h3>{vehicle.name}</h3>
                 </div>
               </article>
             ))}
