@@ -158,9 +158,7 @@ export default function Home() {
             <div className="section-label">Experiences</div>
             <h2>Travel in Style. Discover in Comfort.</h2>
             <p>
-              The journey should feel curated, not just booked. These sections
-              position DFP Travels as a premium local specialist for bespoke travel
-              in the Dolomites.
+              Journeys should be curated, never merely booked. DFP Travels delivers bespoke travel experiences across Northern Italy, combining local expertise with refined service.
             </p>
           </div>
 
