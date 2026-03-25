@@ -275,6 +275,10 @@ a {
   margin-left: auto;
 }
 
+.hero-card-inner {
+  width: 100%;
+}
+
 .hero-card-top {
   display: flex;
   justify-content: space-between;
