@@ -626,14 +626,20 @@ a {
 }
 
 .fleet-image-wrap {
-  height: 160px;
+  height: 190px;
+  padding: 14px 14px 6px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfaf7 100%);
 }
 
 .fleet-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center center;
   display: block;
 }
 
@@ -793,12 +799,17 @@ a {
   .hero-card {
     max-width: 100%;
   }
+
+  .fleet-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 720px) {
   .mini-grid,
   .trust-grid,
-  .about-panel {
+  .about-panel,
+  .fleet-grid {
     grid-template-columns: 1fr;
   }
 
@@ -829,5 +840,9 @@ a {
 
   .hero-image-box {
     height: 190px;
+  }
+
+  .fleet-image-wrap {
+    height: 220px;
   }
 }
