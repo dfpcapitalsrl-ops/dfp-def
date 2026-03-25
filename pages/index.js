@@ -104,12 +104,11 @@ export default function Home() {
                   <div className="mini-label">DFP TRAVELS</div>
                   <div className="mini-title">Elevated Travel Experience</div>
                 </div>
-                <div className="mini-pill">Top Class Service</div>
               </div>
 
-             <div className="hero-image-box">
-  <img src="/hero-car.jpg" alt="DFP Travels" />
-</div>
+              <div className="hero-image-box">
+                <img src="/hero-car.jpg" alt="DFP Travels" />
+              </div>
 
               <div className="mini-grid">
                 <div className="mini-box">
