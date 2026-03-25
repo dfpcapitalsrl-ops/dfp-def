@@ -154,29 +154,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="services" className="section section-white">
-        <div className="container">
-          <div className="section-head centered">
-            <div className="section-label">Our Services</div>
-            <h2>Luxury Ground Transportation perfectly Tailored.</h2>
-            <p>
-              A stronger structure for premium clients, hospitality partners and
-              international travelers looking for reliability and refinement.
-            </p>
-          </div>
-
-          <div className="service-grid">
-            {services.map((service) => (
-              <article className="service-card" key={service.title}>
-                <div className="service-icon">✦</div>
-                <h3>{service.title}</h3>
-                <p>{service.text}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section id="experiences" className="section alt-section">
         <div className="container">
           <div className="section-head centered">
@@ -227,6 +204,29 @@ export default function Home() {
                 <div className="fleet-body">
                   <h3>{vehicle.name}</h3>
                 </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="services" className="section section-white">
+        <div className="container">
+          <div className="section-head centered">
+            <div className="section-label">Our Services</div>
+            <h2>Luxury Ground Transportation perfectly Tailored.</h2>
+            <p>
+              A stronger structure for premium clients, hospitality partners and
+              international travelers looking for reliability and refinement.
+            </p>
+          </div>
+
+          <div className="service-grid">
+            {services.map((service) => (
+              <article className="service-card" key={service.title}>
+                <div className="service-icon">✦</div>
+                <h3>{service.title}</h3>
+                <p>{service.text}</p>
               </article>
             ))}
           </div>
