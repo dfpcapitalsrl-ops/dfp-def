@@ -114,12 +114,6 @@ export default function Home() {
                 WhatsApp
               </a>
             </div>
-
-            <div className="hero-highlights">
-              <span>Airport transfers</span>
-              <span>Luxury day tours</span>
-              <span>VIP &amp; business service</span>
-            </div>
           </div>
 
           <div className="hero-card">
@@ -133,21 +127,6 @@ export default function Home() {
 
               <div className="hero-image-box">
                 <img src="/hero-car.jpg" alt="DFP Travels" />
-              </div>
-
-              <div className="mini-grid">
-                <div className="mini-box">
-                  <small>Transfers</small>
-                  <strong>Airports</strong>
-                </div>
-                <div className="mini-box">
-                  <small>Tours</small>
-                  <strong>Dolomites</strong>
-                </div>
-                <div className="mini-box">
-                  <small>Style</small>
-                  <strong>Luxury</strong>
-                </div>
               </div>
             </div>
           </div>
