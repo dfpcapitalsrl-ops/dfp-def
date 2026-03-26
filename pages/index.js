@@ -90,21 +90,26 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="hero-section">
+      <section className="hero-section hero-section--premium">
         <div className="hero-image"></div>
         <div className="hero-bg hero-bg-left"></div>
         <div className="hero-bg hero-bg-right"></div>
 
-        <div className="container hero-grid">
-          <div className="hero-copy">
+        <div className="container hero-grid hero-grid--premium">
+          <div className="hero-copy hero-copy--premium">
             <div className="eyebrow">
               Professional Chauffeur Services in Northern Italy
             </div>
-            <h1>Luxury Transfers & Exclusive Tours</h1>
+
+            <h1>
+              Luxury Transfers
+              <span>&amp; Exclusive Tours</span>
+            </h1>
+
             <p>
               DFP Travels redefines private travel with luxury chauffeur services
               and bespoke experiences across Northern Italy, delivering elegance,
-              comfort, and impeccable attention to detail in every journey.
+              comfort and impeccable attention to detail in every journey.
             </p>
 
             <div className="hero-actions">
@@ -118,19 +123,38 @@ export default function Home() {
                 WhatsApp
               </a>
             </div>
+
+            <div className="hero-points">
+              <span>Airport Transfers</span>
+              <span>Private Tours</span>
+              <span>VIP Mobility</span>
+            </div>
           </div>
 
-          <div className="hero-card">
-            <div className="hero-card-inner">
-              <div className="hero-card-top">
-                <div>
-                  <div className="mini-label">DFP TRAVELS</div>
-                  <div className="mini-title">Elevated Travel Experience</div>
-                </div>
-              </div>
+          <div className="hero-card hero-card--premium">
+            <div className="hero-card-top">
+              <div className="mini-label">DFP TRAVELS</div>
+              <div className="hero-card-badge">Private Chauffeur Service</div>
+            </div>
 
-              <div className="hero-image-box">
-                <img src="/hero-car.jpg" alt="DFP Travels" />
+            <div className="mini-title">Elevated Travel Experience</div>
+
+            <div className="hero-image-box hero-image-box--premium">
+              <img src="/hero-car.jpg" alt="DFP Travels chauffeur service" />
+            </div>
+
+            <div className="hero-card-footer">
+              <div>
+                <small>Comfort</small>
+                <strong>Premium Fleet</strong>
+              </div>
+              <div>
+                <small>Service</small>
+                <strong>Tailor-Made</strong>
+              </div>
+              <div>
+                <small>Coverage</small>
+                <strong>Northern Italy</strong>
               </div>
             </div>
           </div>
