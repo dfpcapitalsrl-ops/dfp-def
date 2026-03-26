@@ -45,23 +45,23 @@ export default function Home() {
 
   const fleet = [
     {
-      name: "Mercedes V-Class",
+      name: "Mercedes Vito",
       image: "/fleet-1.jpg",
     },
     {
-      name: "Mercedes E-Class",
+      name: "Mercedes V-Class",
       image: "/fleet-2.jpg",
     },
     {
-      name: "Luxury Van",
+      name: "Mercedes E-Class",
       image: "/fleet-3.jpg",
     },
     {
-      name: "Executive Sedan",
+      name: "Mercedes E-Class SW",
       image: "/fleet-4.jpg",
     },
     {
-      name: "Premium Shuttle",
+      name: "Mercedes C-Class SW",
       image: "/fleet-5.jpg",
     },
   ];
