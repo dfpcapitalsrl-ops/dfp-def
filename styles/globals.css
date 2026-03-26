@@ -542,6 +542,7 @@ a {
   font-size: 18px;
   color: var(--navy);
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .water-taxi-grid {
@@ -705,6 +706,10 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .fleet-body h3 {
+    white-space: normal;
+  }
+
   .water-taxi-image {
     height: 320px;
   }
@@ -752,6 +757,10 @@ a {
 
   .fleet-image-wrap {
     height: 220px;
+  }
+
+  .fleet-body h3 {
+    white-space: normal;
   }
 
   .water-taxi-image {
