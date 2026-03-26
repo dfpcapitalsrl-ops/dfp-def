@@ -193,36 +193,41 @@ export default function Home() {
       </section>
 
       <section id="water-taxi" className="section alt-section">
-        <div className="container water-taxi-grid">
-          <div className="water-taxi-copy">
+        <div className="container">
+          <div className="section-head centered">
             <div className="section-label">Water Taxi</div>
-            <h2>Exclusive water transfers with the same comfort and elegance.</h2>
-            <p>
-              Extend the DFP Travels experience beyond the road with refined
-              private water taxi services, ideal for luxury arrivals, hotel
-              connections, special occasions and tailor-made journeys in iconic
-              lake destinations.
-            </p>
-            <p>
-              Designed for guests who expect privacy, punctuality and a seamless
-              premium standard from start to finish.
-            </p>
-            <div className="water-taxi-actions">
-              <a
-                className="btn btn-gold"
-                href="mailto:info@dfptravels.com?subject=Water%20Taxi%20Request"
-              >
-                Request water taxi
-              </a>
-            </div>
           </div>
 
-          <div className="water-taxi-visual">
-            <img
-              src="/water-taxi.jpg"
-              alt="Luxury Water Taxi"
-              className="water-taxi-image"
-            />
+          <div className="water-taxi-grid">
+            <div className="water-taxi-copy">
+              <h2>Exclusive water transfers with the same comfort and elegance.</h2>
+              <p>
+                Extend the DFP Travels experience beyond the road with refined
+                private water taxi services, ideal for luxury arrivals, hotel
+                connections, special occasions and tailor-made journeys in iconic
+                lake destinations.
+              </p>
+              <p>
+                Designed for guests who expect privacy, punctuality and a seamless
+                premium standard from start to finish.
+              </p>
+              <div className="water-taxi-actions">
+                <a
+                  className="btn btn-gold"
+                  href="mailto:info@dfptravels.com?subject=Water%20Taxi%20Request"
+                >
+                  Request water taxi
+                </a>
+              </div>
+            </div>
+
+            <div className="water-taxi-visual">
+              <img
+                src="/water-taxi.jpg"
+                alt="Luxury Water Taxi"
+                className="water-taxi-image"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -250,33 +255,38 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="section section-white">
-        <div className="container about-grid">
-          <div>
+      <section id="about" className="section alt-section">
+        <div className="container">
+          <div className="section-head centered company-head">
             <div className="section-label">Company</div>
-            <h2>Luxury branding, stronger hierarchy, more corporate confidence.</h2>
-            <p className="muted">
-              This version pushes a more refined balance between elegance and
-              readability: more whitespace, stronger typography, cleaner
-              sections and clearer conversion paths.
-            </p>
           </div>
 
-          <div className="about-panel">
-            <div className="about-stat">
-              <strong>24/7</strong>
-              <span>Availability</span>
+          <div className="about-grid">
+            <div>
+              <h2>Luxury branding, stronger hierarchy, more corporate confidence.</h2>
+              <p className="muted">
+                This version pushes a more refined balance between elegance and
+                readability: more whitespace, stronger typography, cleaner
+                sections and clearer conversion paths.
+              </p>
             </div>
-            <div className="about-stat">
-              <strong>VIP</strong>
-              <span>Premium Service</span>
-            </div>
-            <div className="about-stat wide">
-              <strong>Tailor-Made</strong>
-              <span>
-                Airport transfers, luxury tours and executive mobility with
-                personalized support.
-              </span>
+
+            <div className="about-panel">
+              <div className="about-stat">
+                <strong>24/7</strong>
+                <span>Availability</span>
+              </div>
+              <div className="about-stat">
+                <strong>VIP</strong>
+                <span>Premium Service</span>
+              </div>
+              <div className="about-stat wide">
+                <strong>Tailor-Made</strong>
+                <span>
+                  Airport transfers, luxury tours and executive mobility with
+                  personalized support.
+                </span>
+              </div>
             </div>
           </div>
         </div>
