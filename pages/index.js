@@ -97,10 +97,14 @@ export default function Home() {
 
         <div className="container hero-grid">
           <div className="hero-copy">
-            <div className="eyebrow">Professional Chauffeur Services in Northern Italy</div>
+            <div className="eyebrow">
+              Professional Chauffeur Services in Northern Italy
+            </div>
             <h1>Luxury Transfers & Exclusive Tours</h1>
             <p>
-              DFP Travels redefines private travel with luxury chauffeur services and bespoke experiences across Northern Italy, delivering elegance, comfort, and impeccable attention to detail in every journey.
+              DFP Travels redefines private travel with luxury chauffeur services
+              and bespoke experiences across Northern Italy, delivering elegance,
+              comfort, and impeccable attention to detail in every journey.
             </p>
 
             <div className="hero-actions">
@@ -139,7 +143,9 @@ export default function Home() {
             <div className="section-label">Experiences</div>
             <h2>Travel in Style. Discover in Comfort.</h2>
             <p>
-              Journeys should be curated, never merely booked. DFP Travels delivers bespoke travel experiences across Northern Italy, combining local expertise with refined service.
+              Journeys should be curated, never merely booked. DFP Travels
+              delivers bespoke travel experiences across Northern Italy,
+              combining local expertise with refined service.
             </p>
           </div>
 
@@ -169,8 +175,8 @@ export default function Home() {
             <div className="section-label">Our Fleet</div>
             <h2>Vehicles selected for comfort, elegance and reliability.</h2>
             <p>
-              A premium fleet designed for airport transfers, private tours, VIP service
-              and bespoke travel experiences across Northern Italy.
+              A premium fleet designed for airport transfers, private tours, VIP
+              service and bespoke travel experiences across Northern Italy.
             </p>
           </div>
 
@@ -178,7 +184,11 @@ export default function Home() {
             {fleet.map((vehicle) => (
               <article className="fleet-card" key={vehicle.name}>
                 <div className="fleet-image-wrap">
-                  <img src={vehicle.image} alt={vehicle.name} className="fleet-image" />
+                  <img
+                    src={vehicle.image}
+                    alt={vehicle.name}
+                    className="fleet-image"
+                  />
                 </div>
                 <div className="fleet-body">
                   <h3>{vehicle.name}</h3>
@@ -195,9 +205,10 @@ export default function Home() {
             <div className="section-label">Water Taxi</div>
             <h2>Exclusive water transfers with the same comfort and elegance.</h2>
             <p>
-              Extend the DFP Travels experience beyond the road with refined private
-              water taxi services, ideal for luxury arrivals, hotel connections,
-              special occasions and tailor-made journeys in iconic lake destinations.
+              Extend the DFP Travels experience beyond the road with refined
+              private water taxi services, ideal for luxury arrivals, hotel
+              connections, special occasions and tailor-made journeys in iconic
+              lake destinations.
             </p>
             <p>
               Designed for guests who expect privacy, punctuality and a seamless
@@ -214,7 +225,11 @@ export default function Home() {
           </div>
 
           <div className="water-taxi-visual">
-            <img src="/water-taxi.jpg" alt="Luxury Water Taxi" className="water-taxi-image" />
+            <img
+              src="/water-taxi.jpg"
+              alt="Luxury Water Taxi"
+              className="water-taxi-image"
+            />
           </div>
         </div>
       </section>
@@ -249,8 +264,8 @@ export default function Home() {
             <h2>Luxury branding, stronger hierarchy, more corporate confidence.</h2>
             <p className="muted">
               This version pushes a more refined balance between elegance and
-              readability: more whitespace, stronger typography, cleaner sections
-              and clearer conversion paths.
+              readability: more whitespace, stronger typography, cleaner
+              sections and clearer conversion paths.
             </p>
           </div>
 
@@ -281,8 +296,8 @@ export default function Home() {
             <h2>Ready to turn this into your final premium website?</h2>
             <p className="contact-copy">
               Replace the placeholder details with your real WhatsApp number,
-              business email, final logo and real photography to publish a stronger
-              luxury brand presence.
+              business email, final logo and real photography to publish a
+              stronger luxury brand presence.
             </p>
 
             <div className="contact-meta">
