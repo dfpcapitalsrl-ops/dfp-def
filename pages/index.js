@@ -97,10 +97,6 @@ export default function Home() {
 
         <div className="container hero-grid hero-grid--premium">
           <div className="hero-copy hero-copy--premium">
-            <div className="eyebrow">
-              Professional Chauffeur Services in Northern Italy
-            </div>
-
             <h1>
               Luxury Transfers
               <span>&amp; Exclusive Tours</span>
