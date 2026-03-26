@@ -226,7 +226,7 @@ a {
 .hero-copy--simple h1 {
   margin: 0;
   font-size: 84px;
-  line-height: 0.93;
+  line-height: 1.01;
   letter-spacing: -0.06em;
   color: var(--navy);
   max-width: 900px;
@@ -235,6 +235,7 @@ a {
 .hero-copy--simple h1 span {
   display: block;
   white-space: nowrap;
+  margin-top: 8px;
 }
 
 .hero-copy p,
@@ -343,7 +344,7 @@ a {
 
 .section-head.centered {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 34px;
   text-align: center;
 }
 
@@ -552,6 +553,10 @@ a {
   align-items: center;
 }
 
+.water-taxi-copy h2 {
+  margin-bottom: 22px;
+}
+
 .water-taxi-copy p {
   margin: 0 0 18px;
 }
@@ -575,11 +580,19 @@ a {
   object-fit: cover;
 }
 
+.company-head {
+  margin-bottom: 34px;
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   gap: 36px;
   align-items: start;
+}
+
+.about-grid h2 {
+  margin-bottom: 22px;
 }
 
 .about-panel {
@@ -692,6 +705,7 @@ a {
 
   .hero-copy--simple h1 span {
     white-space: normal;
+    margin-top: 6px;
   }
 
   .section-head h2,
@@ -733,11 +747,12 @@ a {
   .hero-copy h1,
   .hero-copy--simple h1 {
     font-size: 44px;
-    line-height: 0.98;
+    line-height: 1.02;
   }
 
   .hero-copy--simple h1 span {
     white-space: normal;
+    margin-top: 4px;
   }
 
   .hero-copy p,
