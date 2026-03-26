@@ -186,12 +186,7 @@ a {
   color: var(--gold-light);
 }
 
-.hero-copy h1,
-.section-head h2,
-.about-grid h2,
-.contact-grid h2,
-.trust-wrap h2,
-.water-taxi-copy h2 {
+.hero-copy h1 {
   margin: 0;
   font-size: 58px;
   line-height: 1.05;
@@ -204,7 +199,11 @@ a {
 .contact-grid h2,
 .trust-wrap h2,
 .water-taxi-copy h2 {
+  margin: 0;
   font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--navy);
 }
 
 .hero-copy p,
@@ -257,17 +256,6 @@ a {
   display: none;
 }
 
-.hero-highlights span {
-  padding: 14px 16px;
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.92);
-  border-radius: 16px;
-  box-shadow: 0 12px 26px rgba(20, 42, 92, 0.05);
-  font-size: 14px;
-  color: var(--navy);
-}
-
-/* HERO BOX CORRETTO DAVVERO */
 .hero-card {
   border-radius: 34px;
   padding: 20px;
@@ -318,6 +306,52 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.12);
   color: var(--gold-light);
   font-size: 13px;
+}
+
+.mini-grid {
+  display: none;
+}
+
+.mini-box {
+  padding: 12px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.mini-box small {
+  display: block;
+  color: #dfe6f5;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 10px;
+}
+
+.mini-box strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  background: url('/hero.jpg') center/cover no-repeat;
+  opacity: 0.25;
+}
+
+.hero-image-box {
+  position: relative;
+  height: 340px;
+  border-radius: 28px;
+  overflow: hidden;
+  margin-top: auto;
+}
+
+.hero-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .hero-scene {
@@ -430,30 +464,6 @@ a {
 
 .scene-wheel.right {
   right: 24px;
-}
-
-.mini-grid {
-  display: none;
-}
-
-.mini-box {
-  padding: 12px;
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.08);
-}
-
-.mini-box small {
-  display: block;
-  color: #dfe6f5;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  font-size: 10px;
-}
-
-.mini-box strong {
-  display: block;
-  margin-top: 8px;
-  font-size: 18px;
 }
 
 .section {
@@ -610,8 +620,6 @@ a {
   padding: 24px;
 }
 
-/* ===== FLEET SECTION ===== */
-
 .fleet-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -662,8 +670,6 @@ a {
   color: var(--navy);
   font-weight: 700;
 }
-
-/* ===== WATER TAXI SECTION ===== */
 
 .water-taxi-grid {
   display: grid;
@@ -784,28 +790,6 @@ a {
   width: 100%;
 }
 
-.hero-image {
-  position: absolute;
-  inset: 0;
-  background: url('/hero.jpg') center/cover no-repeat;
-  opacity: 0.25;
-}
-
-.hero-image-box {
-  position: relative;
-  height: 340px;
-  border-radius: 28px;
-  overflow: hidden;
-  margin-top: 6px;
-}
-
-.hero-image-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
 @media (max-width: 1024px) {
   .hero-grid,
   .service-grid,
@@ -842,6 +826,10 @@ a {
   .hero-card {
     max-width: 100%;
     min-height: auto;
+  }
+
+  .hero-image-box {
+    height: 300px;
   }
 
   .fleet-grid {
