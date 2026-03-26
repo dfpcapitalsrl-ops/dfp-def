@@ -90,13 +90,14 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="hero-section hero-section--premium">
+      <section className="hero-section hero-section--premium hero-section--simple">
         <div className="hero-image"></div>
+        <div className="hero-overlay"></div>
         <div className="hero-bg hero-bg-left"></div>
         <div className="hero-bg hero-bg-right"></div>
 
-        <div className="container hero-grid hero-grid--premium">
-          <div className="hero-copy hero-copy--premium">
+        <div className="container hero-grid hero-grid--simple">
+          <div className="hero-copy hero-copy--premium hero-copy--simple">
             <h1>
               Luxury Transfers
               <span>&amp; Exclusive Tours</span>
@@ -124,34 +125,6 @@ export default function Home() {
               <span>Airport Transfers</span>
               <span>Private Tours</span>
               <span>VIP Mobility</span>
-            </div>
-          </div>
-
-          <div className="hero-card hero-card--premium">
-            <div className="hero-card-top">
-              <div className="mini-label">DFP TRAVELS</div>
-              <div className="hero-card-badge">Private Chauffeur Service</div>
-            </div>
-
-            <div className="mini-title">Elevated Travel Experience</div>
-
-            <div className="hero-image-box hero-image-box--premium">
-              <img src="/hero-car.jpg" alt="DFP Travels chauffeur service" />
-            </div>
-
-            <div className="hero-card-footer">
-              <div>
-                <small>Comfort</small>
-                <strong>Premium Fleet</strong>
-              </div>
-              <div>
-                <small>Service</small>
-                <strong>Tailor-Made</strong>
-              </div>
-              <div>
-                <small>Coverage</small>
-                <strong>Northern Italy</strong>
-              </div>
             </div>
           </div>
         </div>
