@@ -276,13 +276,13 @@ a {
 .hero-grid--premium {
   position: relative;
   display: grid;
-  grid-template-columns: 1.08fr 0.92fr;
-  gap: 64px;
+  grid-template-columns: 1.18fr 0.82fr;
+  gap: 56px;
   align-items: center;
 }
 
 .hero-copy--premium {
-  max-width: 720px;
+  max-width: 820px;
 }
 
 .hero-copy--premium .eyebrow {
@@ -291,15 +291,16 @@ a {
 
 .hero-copy--premium h1 {
   margin: 0;
-  font-size: 88px;
-  line-height: 0.92;
-  letter-spacing: -0.06em;
+  font-size: 72px;
+  line-height: 0.94;
+  letter-spacing: -0.055em;
   color: var(--navy);
-  max-width: 720px;
+  max-width: 820px;
 }
 
 .hero-copy--premium h1 span {
   display: block;
+  white-space: nowrap;
 }
 
 .hero-copy--premium p {
@@ -850,7 +851,11 @@ a {
   }
 
   .hero-copy--premium h1 {
-    font-size: 64px;
+    font-size: 58px;
+  }
+
+  .hero-copy--premium h1 span {
+    white-space: normal;
   }
 
   .section-head h2,
@@ -907,6 +912,10 @@ a {
   .hero-copy--premium h1 {
     font-size: 44px;
     line-height: 0.98;
+  }
+
+  .hero-copy--premium h1 span {
+    white-space: normal;
   }
 
   .hero-copy p,
