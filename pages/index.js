@@ -296,7 +296,9 @@ export default function Home() {
         <div className="container contact-grid">
           <div>
             <div className="section-label light">Contact</div>
-            <h2 className="contact-title">Ready to turn this into your final premium website?</h2>
+            <h2 className="contact-title">
+              Ready to turn this into your final premium website?
+            </h2>
             <p className="contact-copy">
               Replace the placeholder details with your real WhatsApp number,
               business email, final logo and real photography to publish a
