@@ -633,8 +633,9 @@ a {
   color: white;
 }
 
-.contact-title {
-  color: var(--gold-light);
+/* regola definitiva */
+.contact-grid .contact-title {
+  color: var(--gold-light) !important;
 }
 
 .contact-copy {
