@@ -274,11 +274,9 @@ export default function Home() {
 
           <div className="about-grid">
             <div>
-              <h2>Luxury branding, stronger hierarchy, more corporate confidence.</h2>
+              <h2>A trusted partner for luxury transfers, private tours and VIP mobility.</h2>
               <p className="muted">
-                This version pushes a more refined balance between elegance and
-                readability: more whitespace, stronger typography, cleaner
-                sections and clearer conversion paths.
+                DFP Travels delivers a private travel experiencd shaped by punctuality, discretion and personalized service, with a strong focus on comfort, elegance and reliability.
               </p>
             </div>
 
