@@ -30,6 +30,12 @@ a {
   text-decoration: none;
 }
 
+button,
+input,
+textarea {
+  font: inherit;
+}
+
 .site-shell {
   overflow-x: hidden;
 }
@@ -294,12 +300,14 @@ a {
   border-radius: 14px;
   font-weight: 700;
   transition: 0.25s ease;
+  cursor: pointer;
 }
 
 .btn-gold {
   background: linear-gradient(135deg, var(--gold-light), var(--gold));
   color: white;
   box-shadow: 0 16px 34px rgba(217, 161, 58, 0.24);
+  border: none;
 }
 
 .btn-gold:hover {
@@ -686,18 +694,44 @@ a {
   box-shadow: 0 26px 60px rgba(0, 0, 0, 0.22);
 }
 
-.field-placeholder {
-  min-height: 50px;
+.contact-input {
+  width: 100%;
+  min-height: 52px;
   border-radius: 16px;
   padding: 14px 16px;
-  color: #bfc9df;
+  color: white;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.08);
   margin-bottom: 14px;
+  outline: none;
 }
 
-.field-placeholder.large {
-  min-height: 90px;
+.contact-input::placeholder {
+  color: #bfc9df;
+}
+
+.contact-input:focus {
+  border-color: rgba(240, 193, 93, 0.8);
+  box-shadow: 0 0 0 3px rgba(240, 193, 93, 0.12);
+}
+
+.contact-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-message {
+  margin: 14px 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.form-message-success {
+  color: #9df0b3;
+}
+
+.form-message-error {
+  color: #ffb4b4;
 }
 
 .full-width {
