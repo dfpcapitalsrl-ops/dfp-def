@@ -628,14 +628,11 @@ a {
   grid-column: span 2;
 }
 
-/* CONTACT */
-
 .contact-section {
   background: var(--navy);
   color: white;
 }
 
-/* ✅ MODIFICA RICHIESTA */
 .contact-title {
   color: var(--gold-light);
 }
@@ -682,4 +679,117 @@ a {
 
 .full-width {
   width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .hero-grid,
+  .service-grid,
+  .trust-wrap,
+  .experience-grid,
+  .about-grid,
+  .contact-grid,
+  .section-head.split,
+  .water-taxi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-head.split {
+    display: grid;
+    align-items: start;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero-copy h1,
+  .hero-copy--simple h1 {
+    font-size: 58px;
+  }
+
+  .hero-copy--simple h1 span {
+    white-space: normal;
+    margin-top: 6px;
+  }
+
+  .section-head h2,
+  .about-grid h2,
+  .contact-grid h2,
+  .trust-wrap h2,
+  .water-taxi-copy h2 {
+    font-size: 34px;
+  }
+
+  .fleet-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .fleet-body h3 {
+    white-space: normal;
+  }
+
+  .water-taxi-image {
+    height: 320px;
+  }
+}
+
+@media (max-width: 720px) {
+  .trust-grid,
+  .about-panel,
+  .fleet-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-stat.wide {
+    grid-column: span 1;
+  }
+
+  .hero-section {
+    padding: 130px 0 90px;
+  }
+
+  .hero-copy h1,
+  .hero-copy--simple h1 {
+    font-size: 44px;
+    line-height: 1.02;
+  }
+
+  .hero-copy--simple h1 span {
+    white-space: normal;
+    margin-top: 4px;
+  }
+
+  .hero-copy p,
+  .hero-copy--simple p,
+  .section-head p,
+  .service-card p,
+  .experience-body p,
+  .muted,
+  .contact-copy,
+  .water-taxi-copy p {
+    font-size: 16px;
+  }
+
+  .book-btn {
+    display: none;
+  }
+
+  .fleet-image-wrap {
+    height: 220px;
+  }
+
+  .fleet-body h3 {
+    white-space: normal;
+  }
+
+  .water-taxi-image {
+    height: 240px;
+  }
+
+  .eyebrow,
+  .section-label {
+    font-size: 14px;
+    letter-spacing: 0.16em;
+    margin-bottom: 18px;
+  }
 }
