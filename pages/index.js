@@ -1,4 +1,20 @@
+"use client";
+
+import { useState } from "react";
+
 export default function Home() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [status, setStatus] = useState({
+    loading: false,
+    success: "",
+    error: "",
+  });
+
   const services = [
     {
       title: "Airport & Hotel Transfers",
@@ -65,6 +81,58 @@ export default function Home() {
       image: "/fleet-5.jpg",
     },
   ];
+
+  function handleChange(e) {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  }
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+
+    setStatus({
+      loading: true,
+      success: "",
+      error: "",
+    });
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Something went wrong.");
+      }
+
+      setStatus({
+        loading: false,
+        success: "Your request has been sent successfully.",
+        error: "",
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (error) {
+      setStatus({
+        loading: false,
+        success: "",
+        error: error.message || "Unable to send your request.",
+      });
+    }
+  }
 
   return (
     <main className="site-shell">
@@ -325,19 +393,52 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="contact-form-card">
-            <div className="field-placeholder">Name</div>
-            <div className="field-placeholder">Email</div>
-            <div className="field-placeholder large">
-              Transfer, tour request, hotel partnership, VIP service...
-            </div>
-            <a
+          <form className="contact-form-card" onSubmit={handleSubmit}>
+            <input
+              className="contact-input"
+              type="text"
+              name="name"
+              placeholder="Name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+
+            <input
+              className="contact-input"
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+
+            <textarea
+              className="contact-input contact-textarea"
+              name="message"
+              placeholder="Transfer, tour request, hotel partnership, VIP service..."
+              value={formData.message}
+              onChange={handleChange}
+              required
+            />
+
+            <button
               className="btn btn-gold full-width"
-              href="mailto:info@dfptravels.com?subject=Quote%20Request"
+              type="submit"
+              disabled={status.loading}
             >
-              Send request
-            </a>
-          </div>
+              {status.loading ? "Sending..." : "Send request"}
+            </button>
+
+            {status.success && (
+              <p className="form-message form-message-success">{status.success}</p>
+            )}
+
+            {status.error && (
+              <p className="form-message form-message-error">{status.error}</p>
+            )}
+          </form>
         </div>
       </section>
 
