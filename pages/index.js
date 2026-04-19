@@ -192,6 +192,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ✅ MODIFICA 1 */}
       <section id="services" className="section alt-section">
         <div className="container">
           <div className="section-head centered">
@@ -226,13 +227,7 @@ export default function Home() {
               <h2>Exclusive water transfers with the same comfort and elegance.</h2>
               <p>
                 Extend the DFP Travels experience beyond the road with refined
-                private water taxi services, ideal for luxury arrivals, hotel
-                connections, special occasions and tailor-made journeys in iconic
-                lake destinations.
-              </p>
-              <p>
-                Designed for guests who expect privacy, punctuality and a seamless
-                premium standard from start to finish.
+                private water taxi services.
               </p>
               <div className="water-taxi-actions">
                 <a
@@ -255,6 +250,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ✅ MODIFICA 2 */}
       <section id="about" className="section section-white">
         <div className="container">
           <div className="section-head centered company-head">
@@ -265,28 +261,8 @@ export default function Home() {
             <div>
               <h2>Luxury branding, stronger hierarchy, more corporate confidence.</h2>
               <p className="muted">
-                This version pushes a more refined balance between elegance and
-                readability: more whitespace, stronger typography, cleaner
-                sections and clearer conversion paths.
+                This version pushes a more refined balance between elegance and readability.
               </p>
-            </div>
-
-            <div className="about-panel">
-              <div className="about-stat">
-                <strong>24/7</strong>
-                <span>Availability</span>
-              </div>
-              <div className="about-stat">
-                <strong>VIP</strong>
-                <span>Premium Service</span>
-              </div>
-              <div className="about-stat wide">
-                <strong>Tailor-Made</strong>
-                <span>
-                  Airport transfers, luxury tours and executive mobility with
-                  personalized support.
-                </span>
-              </div>
             </div>
           </div>
         </div>
@@ -296,40 +272,15 @@ export default function Home() {
         <div className="container contact-grid">
           <div>
             <div className="section-label light">Contact</div>
+
+            {/* ✅ MODIFICA 3 */}
             <h2 className="contact-title">
               Ready to turn this into your final premium website?
             </h2>
+
             <p className="contact-copy">
-              Replace the placeholder details with your real WhatsApp number,
-              business email, final logo and real photography to publish a
-              stronger luxury brand presence.
+              Replace the placeholder details with your real WhatsApp number.
             </p>
-
-            <div className="contact-meta">
-              <div>
-                <strong>Email:</strong> info@dfptravels.com
-              </div>
-              <div>
-                <strong>Phone:</strong> +39 000 000 0000
-              </div>
-              <div>
-                <strong>WhatsApp:</strong> +39 000 000 0000
-              </div>
-            </div>
-          </div>
-
-          <div className="contact-form-card">
-            <div className="field-placeholder">Name</div>
-            <div className="field-placeholder">Email</div>
-            <div className="field-placeholder large">
-              Transfer, tour request, hotel partnership, VIP service...
-            </div>
-            <a
-              className="btn btn-gold full-width"
-              href="mailto:info@dfptravels.com?subject=Quote%20Request"
-            >
-              Send request
-            </a>
           </div>
         </div>
       </section>
