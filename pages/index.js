@@ -1,20 +1,4 @@
-"use client";
-
-import { useState } from "react";
-
 export default function Home() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const [status, setStatus] = useState({
-    loading: false,
-    success: "",
-    error: "",
-  });
-
   const services = [
     {
       title: "Airport & Hotel Transfers",
@@ -81,58 +65,6 @@ export default function Home() {
       image: "/fleet-5.jpg",
     },
   ];
-
-  function handleChange(e) {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  }
-
-  async function handleSubmit(e) {
-    e.preventDefault();
-
-    setStatus({
-      loading: true,
-      success: "",
-      error: "",
-    });
-
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.error || "Something went wrong.");
-      }
-
-      setStatus({
-        loading: false,
-        success: "Your request has been sent successfully.",
-        error: "",
-      });
-
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
-      });
-    } catch (error) {
-      setStatus({
-        loading: false,
-        success: "",
-        error: error.message || "Unable to send your request.",
-      });
-    }
-  }
 
   return (
     <main className="site-shell">
@@ -344,7 +276,7 @@ export default function Home() {
             <div>
               <h2>A trusted partner for luxury transfers, private tours and VIP mobility.</h2>
               <p className="muted">
-                DFP Travels delivers a private travel experiencd shaped by punctuality, discretion and personalized service, with a strong focus on comfort, elegance and reliability.
+                DFP Travels delivers a private travel experience shaped by punctuality, discretion and personalized service, with a strong focus on comfort, elegance and reliability.
               </p>
             </div>
 
@@ -393,52 +325,55 @@ export default function Home() {
             </div>
           </div>
 
-          <form className="contact-form-card" onSubmit={handleSubmit}>
-            <input
-              className="contact-input"
-              type="text"
-              name="name"
-              placeholder="Name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
+          <div className="contact-form-card contact-card">
+            <h3>Plan your journey</h3>
 
-            <input
-              className="contact-input"
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
+            <div className="contact-card-item">
+              <span>Email</span>
+              <a href="mailto:info@dfptravels.com?subject=Quote%20Request">
+                info@dfptravels.com
+              </a>
+            </div>
 
-            <textarea
-              className="contact-input contact-textarea"
-              name="message"
-              placeholder="Transfer, tour request, hotel partnership, VIP service..."
-              value={formData.message}
-              onChange={handleChange}
-              required
-            />
+            <div className="contact-card-item">
+              <span>Phone</span>
+              <a href="tel:+3904441110003">+39 0444 1110003</a>
+            </div>
 
-            <button
-              className="btn btn-gold full-width"
-              type="submit"
-              disabled={status.loading}
-            >
-              {status.loading ? "Sending..." : "Send request"}
-            </button>
+            <div className="contact-card-item">
+              <span>WhatsApp</span>
+              <a
+                href="https://wa.me/3904441110003?text=Hello%20DFP%20Travels,%20I%20would%20like%20to%20request%20a%20private%20transfer"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Chat on WhatsApp
+              </a>
+            </div>
 
-            {status.success && (
-              <p className="form-message form-message-success">{status.success}</p>
-            )}
+            <div className="contact-card-actions">
+              <a
+                className="btn btn-gold full-width"
+                href="mailto:info@dfptravels.com?subject=Quote%20Request"
+              >
+                Request a quote
+              </a>
 
-            {status.error && (
-              <p className="form-message form-message-error">{status.error}</p>
-            )}
-          </form>
+              <a
+                className="btn btn-whatsapp full-width"
+                href="https://wa.me/3904441110003?text=Hello%20DFP%20Travels,%20I%20would%20like%20to%20request%20a%20private%20transfer"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="whatsapp-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <path d="M20.52 3.48A11.82 11.82 0 0012.02 0C5.39 0 .02 5.37.02 12c0 2.11.55 4.17 1.6 5.99L0 24l6.18-1.61A11.96 11.96 0 0012.02 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.21-3.5-8.52zM12.02 21.8c-1.86 0-3.67-.5-5.26-1.44l-.38-.22-3.67.96.98-3.58-.25-.37a9.77 9.77 0 01-1.5-5.15c0-5.4 4.39-9.8 9.8-9.8 2.62 0 5.08 1.02 6.93 2.87a9.73 9.73 0 012.87 6.93c0 5.4-4.39 9.8-9.8 9.8zm5.39-7.36c-.29-.15-1.71-.84-1.98-.94-.27-.1-.46-.15-.66.15-.19.29-.75.94-.92 1.13-.17.19-.34.22-.63.07-.29-.15-1.23-.45-2.34-1.44-.86-.77-1.44-1.71-1.61-2-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.66-1.59-.9-2.18-.24-.58-.48-.5-.66-.51h-.56c-.19 0-.51.07-.78.36-.27.29-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.04.15.19 2.08 3.17 5.04 4.44.7.3 1.25.48 1.68.61.71.23 1.35.2 1.86.12.57-.08 1.71-.7 1.95-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.19-.56-.34z" />
+                  </svg>
+                </span>
+                WhatsApp
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
