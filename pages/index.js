@@ -33,7 +33,7 @@ export default function Home() {
     },
     {
       title: "Dolomites & Braies",
-      text: "Where dramatic peaks meet unforgettable journeys in the heart of the Dolomites.",
+      text: "Unforgettable journeys through the heart of the Dolomites.",
     },
     {
       title: "Prosecco Tour",
