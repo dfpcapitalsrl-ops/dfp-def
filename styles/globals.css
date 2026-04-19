@@ -694,44 +694,49 @@ textarea {
   box-shadow: 0 26px 60px rgba(0, 0, 0, 0.22);
 }
 
-.contact-input {
-  width: 100%;
-  min-height: 52px;
-  border-radius: 16px;
-  padding: 14px 16px;
-  color: white;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  margin-bottom: 14px;
-  outline: none;
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
-.contact-input::placeholder {
+.contact-card h3 {
+  margin: 0 0 4px;
+  font-size: 28px;
+  color: white;
+}
+
+.contact-card-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-card-item:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.contact-card-item span {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   color: #bfc9df;
 }
 
-.contact-input:focus {
-  border-color: rgba(240, 193, 93, 0.8);
-  box-shadow: 0 0 0 3px rgba(240, 193, 93, 0.12);
+.contact-card-item a {
+  color: white;
+  font-size: 18px;
+  line-height: 1.5;
+  word-break: break-word;
 }
 
-.contact-textarea {
-  min-height: 120px;
-  resize: vertical;
-}
-
-.form-message {
-  margin: 14px 0 0;
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-.form-message-success {
-  color: #9df0b3;
-}
-
-.form-message-error {
-  color: #ffb4b4;
+.contact-card-actions {
+  display: grid;
+  gap: 12px;
+  margin-top: 8px;
 }
 
 .full-width {
