@@ -306,12 +306,10 @@ export default function Home() {
           <div>
             <div className="section-label light">Contact</div>
             <h2 className="contact-title">
-              Ready to turn this into your final premium website?
+              Start planning your premium travel experience.
             </h2>
             <p className="contact-copy">
-              Replace the placeholder details with your real WhatsApp number,
-              business email, final logo and real photography to publish a
-              stronger luxury brand presence.
+              Get in touch to arrange your private transfer, bespoke tour or VIP service. Our team is available to assist you with personalized solutions, ensuring comfort, reliability and a seamless experience from start to finish.
             </p>
 
             <div className="contact-meta">
