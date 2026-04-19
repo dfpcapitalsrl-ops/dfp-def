@@ -317,7 +317,7 @@ export default function Home() {
                 <strong>Email:</strong> info@dfptravels.com
               </div>
               <div>
-                <strong>Phone:</strong> +39 000 000 0000
+                <strong>Phone:</strong> +39 0444 1110003
               </div>
               <div>
                 <strong>WhatsApp:</strong> +39 0444 1110003
