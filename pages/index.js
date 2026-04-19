@@ -28,16 +28,16 @@ export default function Home() {
 
   const experiences = [
     {
-      title: "Iconic Mountain Passes",
-      text: "Refined private itineraries through the most scenic roads in the Dolomites.",
+      title: "Verona & Lake Garda",
+      text: "Timeless elegance and lakeside beauty between Verona and Lake Garda.",
     },
     {
-      title: "Lakes & Panoramic Stops",
-      text: "Curated journeys for guests who want beauty, comfort and time to enjoy every view.",
+      title: "Dolomites & Braies",
+      text: "Where dramatic peaks meet unforgettable journeys in the heart of the Dolomites.",
     },
     {
-      title: "Tailor-Made Itineraries",
-      text: "Flexible experiences for couples, families, VIP travelers and international guests.",
+      title: "Prosecco Tour",
+      text: "Sip, savor, and discover the sparkling soul of Prosecco country.",
     },
   ];
 
