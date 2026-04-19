@@ -633,6 +633,10 @@ a {
   color: white;
 }
 
+.contact-title {
+  color: var(--gold-light);
+}
+
 .contact-copy {
   color: #dfe6f5;
 }
