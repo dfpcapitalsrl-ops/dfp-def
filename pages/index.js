@@ -192,7 +192,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="services" className="section section-white">
+      <section id="services" className="section alt-section">
         <div className="container">
           <div className="section-head centered">
             <div className="section-label">Our Services</div>
@@ -255,7 +255,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="section alt-section">
+      <section id="about" className="section section-white">
         <div className="container">
           <div className="section-head centered company-head">
             <div className="section-label">Company</div>
@@ -296,7 +296,9 @@ export default function Home() {
         <div className="container contact-grid">
           <div>
             <div className="section-label light">Contact</div>
-            <h2>Ready to turn this into your final premium website?</h2>
+            <h2 className="contact-title">
+              Ready to turn this into your final premium website?
+            </h2>
             <p className="contact-copy">
               Replace the placeholder details with your real WhatsApp number,
               business email, final logo and real photography to publish a
