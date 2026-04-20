@@ -380,13 +380,17 @@ export default function Home() {
         </span>
       </a>
 
-<footer className="site-footer">
-  <div className="container">
-    <p>
-      DFP TRAVELS - Agenzia Viaggi Online di proprietà DFP CAPITAL SRL - Sede Legale: Corso Padova 83, Vicenza
-    </p>
-    <p>
-      SCIA Regione Veneto: Pratica n° 04596800245-10112025-0853 - PEC: dfpcapital@pec.it - P.IVA: 04596800245
-    </p>
-  </div>
-</footer>
+      <footer className="site-footer">
+        <div className="container">
+          <p>
+            DFP TRAVELS - Agenzia Viaggi Online di proprietà DFP CAPITAL SRL - Sede Legale: Corso Padova 83, Vicenza
+          </p>
+          <p>
+            SCIA Regione Veneto: Pratica n° 04596800245-10112025-0853 - PEC: dfpcapital@pec.it - P.IVA: 04596800245
+          </p>
+        </div>
+      </footer>
+
+    </main>
+  );
+}
