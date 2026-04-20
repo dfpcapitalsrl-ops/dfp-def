@@ -83,7 +83,7 @@ export default function Home() {
 
           <a
             className="book-btn"
-            href="mailto:info@dfptravels.com?subject=Quote%20Request"
+            href="mailto:info@dfpcapital.it?subject=Quote%20Request"
           >
             Book Now
           </a>
