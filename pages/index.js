@@ -340,17 +340,6 @@ export default function Home() {
               <a href="tel:+3904441110003">+39 0444 1110003</a>
             </div>
 
-            <div className="contact-card-item">
-              <span>WhatsApp</span>
-              <a
-                href="https://wa.me/3904441110003?text=Hello%20DFP%20Travels,%20I%20would%20like%20to%20request%20a%20private%20transfer"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Chat on WhatsApp
-              </a>
-            </div>
-
             <div className="contact-card-actions">
               <a
                 className="btn btn-gold full-width"
