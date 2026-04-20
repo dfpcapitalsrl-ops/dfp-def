@@ -1,3 +1,4 @@
+"use client";
 export default function Home() {
   const services = [
     {
@@ -394,6 +395,15 @@ export default function Home() {
     </p>
   </div>
 </footer>
+          <div className="cookie-banner">
+  <p>
+    This website uses cookies to ensure the best experience.{" "}
+    <a href="/cookie">Learn more</a>
+  </p>
+  <button onClick={() => document.querySelector(".cookie-banner").style.display = "none"}>
+    Accept
+  </button>
+</div>
     </main>
   );
 }
