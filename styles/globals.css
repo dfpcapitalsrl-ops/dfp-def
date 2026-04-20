@@ -917,4 +917,26 @@ textarea {
 
 .footer-links a:hover {
   text-decoration: underline;
+}.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--navy);
+  color: white;
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  z-index: 300;
+}
+
+.cookie-banner button {
+  background: var(--gold);
+  border: none;
+  padding: 8px 14px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
 }
