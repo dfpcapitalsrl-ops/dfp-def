@@ -890,15 +890,15 @@ textarea {
     width: 58px;
     height: 58px;
   }
-}.site-footer {
-  background: #0f214a;
+.site-footer {
+  background: var(--navy);
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding: 22px 0 28px;
 }
 
 .site-footer p {
   margin: 0;
-  color: rgba(255, 255, 255, 0.72);
+  color: #dfe6f5;
   font-size: 11px;
   line-height: 1.7;
   text-align: center;
@@ -906,4 +906,15 @@ textarea {
 
 .site-footer p + p {
   margin-top: 6px;
+}.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: var(--gold-light);
+  font-size: 12px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
