@@ -890,6 +890,8 @@ textarea {
     width: 58px;
     height: 58px;
   }
+}
+
 .site-footer {
   background: var(--navy);
   border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -906,7 +908,9 @@ textarea {
 
 .site-footer p + p {
   margin-top: 6px;
-}.footer-links {
+}
+
+.footer-links {
   margin-top: 10px;
 }
 
@@ -917,7 +921,9 @@ textarea {
 
 .footer-links a:hover {
   text-decoration: underline;
-}.cookie-banner {
+}
+
+.cookie-banner {
   position: fixed;
   bottom: 0;
   left: 0;
