@@ -389,9 +389,10 @@ export default function Home() {
     <p>
       SCIA Regione Veneto: Pratica n° 04596800245-10112025-0853 - PEC: dfpcapital@pec.it - P.IVA: 04596800245
     </p>
+
+    <p className="footer-links">
+      <a href="/privacy">Privacy Policy</a> |{" "}
+      <a href="/cookie">Cookie Policy</a>
+    </p>
   </div>
 </footer>
-
-</main>
-  );
-}
