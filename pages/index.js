@@ -112,7 +112,7 @@ export default function Home() {
             <div className="hero-actions">
               <a
                 className="btn btn-gold"
-                href="mailto:info@dfptravels.com?subject=Quote%20Request"
+                href="mailto:info@dfpcapital.it?subject=Quote%20Request"
               >
                 Request a quote
               </a>
@@ -248,7 +248,7 @@ export default function Home() {
               <div className="water-taxi-actions">
                 <a
                   className="btn btn-gold"
-                  href="mailto:info@dfptravels.com?subject=Water%20Taxi%20Request"
+                  href="mailto:info@dfpcapital.it?subject=Water%20Taxi%20Request"
                 >
                   Request water taxi
                 </a>
@@ -314,7 +314,7 @@ export default function Home() {
 
             <div className="contact-meta">
               <div>
-                <strong>Email:</strong> info@dfptravels.com
+                <strong>Email:</strong> info@dfpcapital.it
               </div>
               <div>
                 <strong>Phone:</strong> +39 0444 1110003
@@ -330,8 +330,8 @@ export default function Home() {
 
             <div className="contact-card-item">
               <span>Email</span>
-              <a href="mailto:info@dfptravels.com?subject=Quote%20Request">
-                info@dfptravels.com
+              <a href="mailto:info@dfcapital.it?subject=Quote%20Request">
+                info@dfpcapital.it
               </a>
             </div>
 
@@ -343,7 +343,7 @@ export default function Home() {
             <div className="contact-card-actions">
               <a
                 className="btn btn-gold full-width"
-                href="mailto:info@dfptravels.com?subject=Quote%20Request"
+                href="mailto:info@dfpcapital.it?subject=Quote%20Request"
               >
                 Request a quote
               </a>
