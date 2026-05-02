@@ -16,6 +16,21 @@ export default function VeniceAirportTransfer() {
     description: "Luxury private transfers from Venice Marco Polo Airport to Venice city, Piazzale Roma, hotels, villas, the Dolomites, Verona, Lake Garda and Northern Italy.",
   };
 
+  const routes = [
+    {
+      title: "Venice Airport to Venice",
+      text: "Private arrival service to Piazzale Roma, hotels, residences and coordinated water taxi connections.",
+    },
+    {
+      title: "Venice Airport to Cortina",
+      text: "Comfortable long-distance transfer to Cortina d'Ampezzo and premium Dolomite resorts.",
+    },
+    {
+      title: "Venice Airport to Lake Garda",
+      text: "Elegant chauffeur service toward Verona, Lake Garda, villas and luxury hospitality destinations.",
+    },
+  ];
+
   return (
     <main className="site-shell">
       <Head>
@@ -44,16 +59,32 @@ export default function VeniceAirportTransfer() {
       </header>
 
       <section className="hero-section hero-section--premium hero-section--simple">
-        <div className="hero-image"></div><div className="hero-overlay"></div>
+        <div className="hero-image"></div><div className="hero-overlay"></div><div className="hero-bg hero-bg-left"></div><div className="hero-bg hero-bg-right"></div>
         <div className="container hero-grid hero-grid--simple">
           <div className="hero-copy hero-copy--premium hero-copy--simple">
+            <div className="section-label">Venice Marco Polo Airport</div>
             <h1>Venice Airport Transfer <span>Private Chauffeur Service</span></h1>
-            <p>Premium private transfers from Venice Marco Polo Airport for international travelers who want a punctual, discreet and comfortable arrival experience. Travel from the airport to Venice, Piazzale Roma, hotels, villas, the Dolomites, Verona, Lake Garda and Northern Italy with DFP Travels.</p>
+            <p>Begin your journey with a premium private transfer from Venice Marco Polo Airport. DFP Travels welcomes international guests with punctual pickup, executive vehicles and refined chauffeur service toward Venice, Cortina, the Dolomites, Verona and Lake Garda.</p>
             <div className="hero-actions">
               <a className="btn btn-gold" href="mailto:info@dfpcapital.it?subject=Venice%20Airport%20Transfer%20Request">Request a quote</a>
               <a className="btn btn-whatsapp" href="https://wa.me/3904441110003?text=Hello%20DFP%20Travels,%20I%20would%20like%20to%20book%20a%20Venice%20airport%20transfer" target="_blank" rel="noopener noreferrer">WhatsApp</a>
             </div>
-            <div className="hero-points"><span>Venice Marco Polo Airport</span><span>Private Driver</span><span>Luxury Vehicles</span></div>
+            <div className="hero-points"><span>Flight-aware pickup</span><span>Executive fleet</span><span>English-speaking support</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-white">
+        <div className="container water-taxi-grid">
+          <div className="water-taxi-copy">
+            <div className="section-label">Arrival Experience</div>
+            <h2>A smoother way to arrive in Venice.</h2>
+            <p>After a long flight, every detail matters. Your transfer is arranged around your arrival time, luggage needs and final destination, with a discreet service designed for premium travelers.</p>
+            <p>Choose a direct road transfer, a coordinated water taxi connection or a long-distance chauffeur service toward Northern Italy’s most exclusive destinations.</p>
+            <div className="water-taxi-actions"><a className="btn btn-gold" href="mailto:info@dfpcapital.it?subject=Venice%20Airport%20Transfer%20Request">Plan your arrival</a></div>
+          </div>
+          <div className="water-taxi-visual">
+            <img src="/fleet-2.jpg" alt="Luxury private transfer vehicle at Venice Airport" className="water-taxi-image" />
           </div>
         </div>
       </section>
@@ -61,30 +92,54 @@ export default function VeniceAirportTransfer() {
       <section className="section alt-section">
         <div className="container">
           <div className="section-head centered">
-            <div className="section-label">Airport Transfer</div>
-            <h2>Seamless arrivals from Venice Airport.</h2>
-            <p>Our chauffeur monitors your arrival, assists with a smooth pickup and provides a refined private transfer experience for families, business travelers, VIP guests and luxury hospitality clients.</p>
+            <div className="section-label">Popular Routes</div>
+            <h2>Private airport transfers tailored to your destination.</h2>
+            <p>From Venice Airport to city hotels, alpine resorts and luxury stays across Northern Italy.</p>
           </div>
-          <div className="service-grid">
-            <article className="service-card"><div className="service-icon">✦</div><h3>Airport to Venice</h3><p>Private transfer from Venice Marco Polo Airport to Venice city access points, Piazzale Roma, hotels and private residences.</p></article>
-            <article className="service-card"><div className="service-icon">✦</div><h3>Airport to Dolomites</h3><p>Comfortable long-distance transfers to Cortina d'Ampezzo, Alta Badia, Val Gardena, Lake Braies and mountain resorts.</p></article>
-            <article className="service-card"><div className="service-icon">✦</div><h3>Airport to Verona & Lake Garda</h3><p>Luxury transfers from Venice Airport to Verona, Lake Garda, villas, hotels and exclusive destinations in Northern Italy.</p></article>
+          <div className="experience-grid">
+            {routes.map((route, index) => (
+              <article className="experience-card" key={route.title}>
+                <div className={`experience-visual visual-${index + 1}`}>
+                  <img src={index === 1 ? "/dolomiti.jpg" : index === 2 ? "/verona.jpg" : "/water-taxi.jpg"} alt={route.title} className="experience-photo" />
+                </div>
+                <div className="experience-body">
+                  <h3>{route.title}</h3>
+                  <p>{route.text}</p>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
       <section className="section section-white">
+        <div className="container">
+          <div className="section-head centered">
+            <div className="section-label">Why DFP Travels</div>
+            <h2>Designed for international clients who expect more.</h2>
+            <p>Clear communication, premium vehicles, professional chauffeurs and tailored assistance before and during your journey.</p>
+          </div>
+          <div className="service-grid">
+            <article className="service-card"><div className="service-icon">✦</div><h3>Premium welcome</h3><p>Arrival coordination, clear communication and a smooth start to your stay in Italy.</p></article>
+            <article className="service-card"><div className="service-icon">✦</div><h3>Comfortable vehicles</h3><p>Executive fleet options selected for comfort, privacy, luggage space and elegant presentation.</p></article>
+            <article className="service-card"><div className="service-icon">✦</div><h3>Beyond Venice</h3><p>Transfers to Cortina, the Dolomites, Verona, Lake Garda and selected luxury destinations.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section className="section contact-section">
         <div className="container contact-grid">
           <div>
-            <div className="section-label">Why DFP Travels</div>
-            <h2>Designed for international clients.</h2>
-            <p className="muted">Clear communication, premium vehicles, professional chauffeurs and tailored assistance before and during your journey.</p>
+            <div className="section-label light">Book Your Transfer</div>
+            <h2 className="contact-title">Arrive in Venice with confidence.</h2>
+            <p className="contact-copy">Send your flight details, destination and number of passengers. DFP Travels will arrange a tailored private transfer solution for your arrival.</p>
+            <div className="contact-meta"><div><strong>Email:</strong> info@dfpcapital.it</div><div><strong>Phone / WhatsApp:</strong> +39 0444 1110003</div></div>
           </div>
           <div className="contact-form-card contact-card">
-            <h3>Book your Venice airport transfer</h3>
+            <h3>Request airport transfer</h3>
             <div className="contact-card-item"><span>Email</span><a href="mailto:info@dfpcapital.it?subject=Venice%20Airport%20Transfer%20Request">info@dfpcapital.it</a></div>
             <div className="contact-card-item"><span>Phone / WhatsApp</span><a href="tel:+3904441110003">+39 0444 1110003</a></div>
-            <div className="contact-card-actions"><a className="btn btn-gold full-width" href="mailto:info@dfpcapital.it?subject=Venice%20Airport%20Transfer%20Request">Request a quote</a></div>
+            <div className="contact-card-actions"><a className="btn btn-gold full-width" href="mailto:info@dfpcapital.it?subject=Venice%20Airport%20Transfer%20Request">Request a quote</a><a className="btn btn-whatsapp full-width" href="https://wa.me/3904441110003?text=Hello%20DFP%20Travels,%20I%20would%20like%20to%20book%20a%20Venice%20airport%20transfer" target="_blank" rel="noopener noreferrer">WhatsApp</a></div>
           </div>
         </div>
       </section>
