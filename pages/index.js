@@ -78,6 +78,12 @@ export default function Home() {
     address: { "@type": "PostalAddress", streetAddress: "Corso Padova 83", addressLocality: "Vicenza", addressRegion: "Veneto", addressCountry: "IT" },
   };
 
+  const whatsappSvg = (
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+      <path d="M20.52 3.48A11.82 11.82 0 0012.02 0C5.39 0 .02 5.37.02 12c0 2.11.55 4.17 1.6 5.99L0 24l6.18-1.61A11.96 11.96 0 0012.02 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.21-3.5-8.52zM12.02 21.8c-1.86 0-3.67-.5-5.26-1.44l-.38-.22-3.67.96.98-3.58-.25-.37a9.77 9.77 0 01-1.5-5.15c0-5.4 4.39-9.8 9.8-9.8 2.62 0 5.08 1.02 6.93 2.87a9.73 9.73 0 012.87 6.93c0 5.4-4.39 9.8-9.8 9.8zm5.39-7.36c-.29-.15-1.71-.84-1.98-.94-.27-.1-.46-.15-.66.15-.19.29-.75.94-.92 1.13-.17.19-.34.22-.63.07-.29-.15-1.23-.45-2.34-1.44-.86-.77-1.44-1.71-1.61-2-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.66-1.59-.9-2.18-.24-.58-.48-.5-.66-.51h-.56c-.19 0-.51.07-.78.36-.27.29-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.04.15.19 2.08 3.17 5.04 4.44.7.3 1.25.48 1.68.61.71.23 1.35.2 1.86.12.57-.08 1.71-.7 1.95-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.19-.56-.34z" />
+    </svg>
+  );
+
   return (
     <main className="site-shell">
       <Head>
@@ -164,7 +170,7 @@ export default function Home() {
 
       <section id="contact" className="section contact-section"><div className="container contact-grid"><div><div className="section-label light">Contact</div><h2 className="contact-title">Request your private transfer from Venice.</h2><p className="contact-copy">Contact DFP Travels to arrange your Venice airport transfer, private driver, bespoke tour or VIP chauffeur service. Our team assists international travelers with personalized solutions from Venice to Northern Italy.</p><div className="contact-meta"><div><strong>Email:</strong> info@dfpcapital.it</div><div><strong>Phone:</strong> +39 0444 1110003</div><div><strong>WhatsApp:</strong> +39 0444 1110003</div></div></div><div className="contact-form-card contact-card"><h3>Plan your Venice transfer</h3><div className="contact-card-item"><span>Email</span><a href="mailto:info@dfpcapital.it?subject=Venice%20Private%20Transfer%20Request">info@dfpcapital.it</a></div><div className="contact-card-item"><span>Phone</span><a href="tel:+3904441110003">+39 0444 1110003</a></div><div className="contact-card-actions"><a className="btn btn-gold full-width" href="mailto:info@dfpcapital.it?subject=Venice%20Private%20Transfer%20Request">Request a quote</a><a className="btn btn-whatsapp full-width" href="https://wa.me/3904441110003?text=Hello%20DFP%20Travels,%20I%20would%20like%20to%20request%20a%20private%20transfer%20from%20Venice" target="_blank" rel="noopener noreferrer">WhatsApp</a></div></div></div></section>
 
-      <a className="floating-whatsapp" href="https://wa.me/3904441110003?text=Hello%20DFP%20Travels,%20I%20would%20like%20to%20request%20a%20private%20transfer%20from%20Venice" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp about a Venice private transfer"><span className="floating-whatsapp-icon" aria-hidden="true">WhatsApp</span></a>
+      <a className="floating-whatsapp" href="https://wa.me/3904441110003?text=Hello%20DFP%20Travels,%20I%20would%20like%20to%20request%20a%20private%20transfer%20from%20Venice" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp about a Venice private transfer"><span className="floating-whatsapp-icon" aria-hidden="true">{whatsappSvg}</span></a>
 
       <footer className="site-footer"><div className="container"><p>DFP TRAVELS - Agenzia Viaggi Online di proprietà DFP CAPITAL SRL - Sede Legale: Corso Padova 83, Vicenza</p><p>SCIA Regione Veneto: Pratica n° 04596800245-10112025-0853 - PEC: dfpcapital@pec.it - P.IVA: 04596800245</p><p className="footer-links"><a href="/privacy">Privacy Policy</a> | <a href="/cookie">Cookie Policy</a></p></div></footer>
       <div className="cookie-banner"><p>This website uses cookies to ensure the best experience. <a href="/cookie">Learn more</a></p><button onClick={() => document.querySelector(".cookie-banner").style.display = "none"}>Accept</button></div>
