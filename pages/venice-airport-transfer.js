@@ -13,22 +13,15 @@ export default function VeniceAirportTransfer() {
     },
     areaServed: ["Venice Marco Polo Airport", "Venice", "Veneto", "Dolomites", "Verona", "Lake Garda"],
     serviceType: "Private airport transfer and chauffeur service",
-    description:
-      "Luxury private transfers from Venice Marco Polo Airport to Venice city, Piazzale Roma, hotels, villas, the Dolomites, Verona, Lake Garda and Northern Italy.",
+    description: "Luxury private transfers from Venice Marco Polo Airport to Venice city, Piazzale Roma, hotels, villas, the Dolomites, Verona, Lake Garda and Northern Italy.",
   };
 
   return (
     <main className="site-shell">
       <Head>
         <title>Venice Airport Transfer | Private Chauffeur Service | DFP Travels</title>
-        <meta
-          name="description"
-          content="Book a luxury private transfer from Venice Marco Polo Airport to Venice city, Piazzale Roma, the Dolomites, Verona, Lake Garda and Northern Italy."
-        />
-        <meta
-          name="keywords"
-          content="Venice airport transfer, Venice Marco Polo airport transfer, private transfer Venice airport, Venice chauffeur service, private driver Venice airport"
-        />
+        <meta name="description" content="Book a luxury private transfer from Venice Marco Polo Airport to Venice city, Piazzale Roma, the Dolomites, Verona, Lake Garda and Northern Italy." />
+        <meta name="keywords" content="Venice airport transfer, Venice Marco Polo airport transfer, private transfer Venice airport, Venice chauffeur service, private driver Venice airport" />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Venice Airport Transfer | DFP Travels" />
         <meta property="og:description" content="Luxury private transfers from Venice Marco Polo Airport with professional chauffeurs and executive vehicles." />
@@ -42,6 +35,7 @@ export default function VeniceAirportTransfer() {
           <nav className="nav-links">
             <a href="/venice-airport-transfer">Airport Transfer</a>
             <a href="/venice-water-taxi">Water Taxi</a>
+            <a href="/venice-to-cortina-transfer">Venice to Cortina</a>
             <a href="/dolomites-tour-from-venice">Dolomites Tour</a>
             <a href="/#contact">Contact</a>
           </nav>
