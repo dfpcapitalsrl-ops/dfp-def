@@ -37,19 +37,19 @@ export default function Home() {
 
   const experiences = [
     {
-      title: "Venice Airport Transfers",
-      text: "Private luxury transfers from Venice Marco Polo Airport to hotels, villas, ski resorts and exclusive destinations across Northern Italy.",
-      href: "/venice-airport-transfer",
+      title: "Verona & Lake Garda",
+      text: "Timeless elegance and lakeside beauty between Verona and Lake Garda.",
+      href: "#contact",
     },
     {
-      title: "Venice to Dolomites",
-      text: "Comfortable chauffeur-driven journeys from Venice to Cortina, Lake Braies and the most scenic Dolomite destinations.",
+      title: "Dolomites & Braies",
+      text: "Unforgettable journeys through the heart of the Dolomites.",
       href: "/dolomites-tour-from-venice",
     },
     {
-      title: "Venice to Cortina",
-      text: "Direct private transfer from Venice or Venice Airport to Cortina d'Ampezzo with premium vehicles and professional chauffeurs.",
-      href: "/venice-to-cortina-transfer",
+      title: "Prosecco Tour",
+      text: "Sip, savor, and discover the sparkling soul of Prosecco country.",
+      href: "#contact",
     },
   ];
 
@@ -95,10 +95,9 @@ export default function Home() {
         <div className="container nav-bar">
           <a href="/" className="brand"><img src="/logo.png" alt="DFP Travels private transfers from Venice" style={{ height: "60px" }} /></a>
           <nav className="nav-links">
-            <a href="/venice-airport-transfer">Airport Transfer</a>
-            <a href="/venice-water-taxi">Water Taxi</a>
-            <a href="/venice-to-cortina-transfer">Venice to Cortina</a>
-            <a href="/dolomites-tour-from-venice">Dolomites Tour</a>
+            <a href="#services">Services</a>
+            <a href="#experiences">Experiences</a>
+            <a href="#about">Company</a>
             <a href="#contact">Contact</a>
           </nav>
           <a className="book-btn" href="mailto:info@dfpcapital.it?subject=Venice%20Private%20Transfer%20Request">Book Now</a>
@@ -113,24 +112,31 @@ export default function Home() {
             <p>DFP Travels provides premium private transfers from Venice Airport, Venice city and Piazzale Roma to the Dolomites, Verona, Lake Garda and Northern Italy, with professional chauffeurs, executive vehicles and dedicated support for international travelers.</p>
             <div className="hero-actions">
               <a className="btn btn-gold" href="mailto:info@dfpcapital.it?subject=Venice%20Private%20Transfer%20Request">Request a quote</a>
-              <a className="btn btn-whatsapp" href="https://wa.me/3904441110003?text=Hello%20DFP%20Travels,%20I%20would%20like%20to%20request%20a%20private%20transfer%20from%20Venice" target="_blank" rel="noopener noreferrer">
-                <span className="whatsapp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.52 3.48A11.82 11.82 0 0012.02 0C5.39 0 .02 5.37.02 12c0 2.11.55 4.17 1.6 5.99L0 24l6.18-1.61A11.96 11.96 0 0012.02 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.21-3.5-8.52zM12.02 21.8c-1.86 0-3.67-.5-5.26-1.44l-.38-.22-3.67.96.98-3.58-.25-.37a9.77 9.77 0 01-1.5-5.15c0-5.4 4.39-9.8 9.8-9.8 2.62 0 5.08 1.02 6.93 2.87a9.73 9.73 0 012.87 6.93c0 5.4-4.39 9.8-9.8 9.8zm5.39-7.36c-.29-.15-1.71-.84-1.98-.94-.27-.1-.46-.15-.66.15-.19.29-.75.94-.92 1.13-.17.19-.34.22-.63.07-.29-.15-1.23-.45-2.34-1.44-.86-.77-1.44-1.71-1.61-2-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.66-1.59-.9-2.18-.24-.58-.48-.5-.66-.51h-.56c-.19 0-.51.07-.78.36-.27.29-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.04.15.19 2.08 3.17 5.04 4.44.7.3 1.25.48 1.68.61.71.23 1.35.2 1.86.12.57-.08 1.71-.7 1.95-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.19-.56-.34z" /></svg></span>
-                WhatsApp
-              </a>
+              <a className="btn btn-whatsapp" href="https://wa.me/3904441110003?text=Hello%20DFP%20Travels,%20I%20would%20like%20to%20request%20a%20private%20transfer%20from%20Venice" target="_blank" rel="noopener noreferrer"><span className="whatsapp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.52 3.48A11.82 11.82 0 0012.02 0C5.39 0 .02 5.37.02 12c0 2.11.55 4.17 1.6 5.99L0 24l6.18-1.61A11.96 11.96 0 0012.02 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.21-3.5-8.52zM12.02 21.8c-1.86 0-3.67-.5-5.26-1.44l-.38-.22-3.67.96.98-3.58-.25-.37a9.77 9.77 0 01-1.5-5.15c0-5.4 4.39-9.8 9.8-9.8 2.62 0 5.08 1.02 6.93 2.87a9.73 9.73 0 012.87 6.93c0 5.4-4.39 9.8-9.8 9.8zm5.39-7.36c-.29-.15-1.71-.84-1.98-.94-.27-.1-.46-.15-.66.15-.19.29-.75.94-.92 1.13-.17.19-.34.22-.63.07-.29-.15-1.23-.45-2.34-1.44-.86-.77-1.44-1.71-1.61-2-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.66-1.59-.9-2.18-.24-.58-.48-.5-.66-.51h-.56c-.19 0-.51.07-.78.36-.27.29-1.03 1.01-1.03 2.46 0 1.45 1.06 2.85 1.21 3.04.15.19 2.08 3.17 5.04 4.44.7.3 1.25.48 1.68.61.71.23 1.35.2 1.86.12.57-.08 1.71-.7 1.95-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.19-.56-.34z" /></svg></span>WhatsApp</a>
             </div>
-            <div className="hero-points"><a href="/venice-airport-transfer">Venice Airport Transfers</a><a href="/venice-to-cortina-transfer">Venice to Cortina</a><a href="/dolomites-tour-from-venice">Dolomites Tour</a></div>
+            <div className="hero-points"><span>Airport Transfers</span><span>Private Tours</span><span>VIP Mobility</span></div>
           </div>
         </div>
       </section>
 
       <section id="experiences" className="section alt-section">
         <div className="container">
-          <div className="section-head centered"><div className="section-label">Experiences</div><h2>Private transfers from Venice to Italy's most exclusive destinations.</h2><p>From airport arrivals to long-distance luxury transfers, DFP Travels connects Venice with the Dolomites, Verona, Lake Garda and premium destinations across Northern Italy.</p></div>
+          <div className="section-head centered">
+            <div className="section-label">Experiences</div>
+            <h2>Travel in Style. Discover in Comfort.</h2>
+            <p>Journeys should be curated, never merely booked. DFP Travels delivers bespoke travel experiences across Northern Italy, combining local expertise with refined service.</p>
+          </div>
           <div className="experience-grid">
             {experiences.map((experience, index) => (
               <article className="experience-card" key={experience.title}>
-                <a href={experience.href} className={`experience-visual visual-${index + 1}`}><img src={experienceImages[index]} alt={experience.title} className="experience-photo" /></a>
-                <div className="experience-body"><h3><a href={experience.href}>{experience.title}</a></h3><p>{experience.text}</p><a className="btn btn-gold" href={experience.href}>Discover more</a></div>
+                <div className={`experience-visual visual-${index + 1}`}>
+                  <img src={experienceImages[index]} alt={experience.title} className="experience-photo" />
+                </div>
+                <div className="experience-body">
+                  <h3>{experience.title}</h3>
+                  <p>{experience.text}</p>
+                  <a href={experience.href} aria-label={`Learn more about ${experience.title}`}>Learn more</a>
+                </div>
               </article>
             ))}
           </div>
@@ -142,11 +148,11 @@ export default function Home() {
       </section>
 
       <section id="services" className="section alt-section">
-        <div className="container"><div className="section-head centered"><div className="section-label">Our Services</div><h2>Luxury transfers from Venice, tailored for international travelers.</h2><p>Private airport transfers, chauffeur service, long-distance routes and premium mobility for guests, families, business travelers and hospitality partners.</p></div><div className="service-grid">{services.map((service) => (<article className="service-card" key={service.title}><div className="service-icon">✦</div><h3><a href={service.href}>{service.title}</a></h3><p>{service.text}</p><a href={service.href}>Learn more</a></article>))}</div></div>
+        <div className="container"><div className="section-head centered"><div className="section-label">Our Services</div><h2>Luxury transfers from Venice, tailored for international travelers.</h2><p>Private airport transfers, chauffeur service, long-distance routes and premium mobility for guests, families, business travelers and hospitality partners.</p></div><div className="service-grid">{services.map((service) => (<article className="service-card" key={service.title}><div className="service-icon">✦</div><h3>{service.title}</h3><p>{service.text}</p><a href={service.href}>Learn more</a></article>))}</div></div>
       </section>
 
       <section id="water-taxi" className="section section-white">
-        <div className="container"><div className="section-head centered"><div className="section-label">Water Taxi</div></div><div className="water-taxi-grid"><div className="water-taxi-copy"><h2>Private water taxi connections for seamless Venice arrivals.</h2><p>Extend the DFP Travels experience with refined private water taxi solutions for Venice arrivals, hotel connections, special occasions and tailor-made journeys in iconic Italian destinations.</p><p>Designed for guests who expect privacy, punctuality and a seamless premium standard from airport arrival to final destination.</p><div className="water-taxi-actions"><a className="btn btn-gold" href="/venice-water-taxi">Discover Venice Water Taxi</a></div></div><div className="water-taxi-visual"><a href="/venice-water-taxi"><img src="/water-taxi.jpg" alt="Private water taxi service in Venice" className="water-taxi-image" /></a></div></div></div>
+        <div className="container"><div className="section-head centered"><div className="section-label">Water Taxi</div></div><div className="water-taxi-grid"><div className="water-taxi-copy"><h2>Private water taxi connections for seamless Venice arrivals.</h2><p>Extend the DFP Travels experience with refined private water taxi solutions for Venice arrivals, hotel connections, special occasions and tailor-made journeys in iconic Italian destinations.</p><p>Designed for guests who expect privacy, punctuality and a seamless premium standard from airport arrival to final destination.</p><div className="water-taxi-actions"><a className="btn btn-gold" href="/venice-water-taxi">Discover Venice Water Taxi</a></div></div><div className="water-taxi-visual"><img src="/water-taxi.jpg" alt="Private water taxi service in Venice" className="water-taxi-image" /></div></div></div>
       </section>
 
       <section id="about" className="section alt-section"><div className="container"><div className="section-head centered company-head"><div className="section-label">Company</div></div><div className="about-grid"><div><h2>A trusted partner for Venice transfers, private tours and VIP mobility.</h2><p className="muted">DFP Travels delivers a private travel experience shaped by punctuality, discretion and personalized service, with a strong focus on comfort, elegance and reliability for international clients arriving in Venice and Northern Italy.</p></div><div className="about-panel"><div className="about-stat"><strong>24/7</strong><span>Availability</span></div><div className="about-stat"><strong>VIP</strong><span>Premium Service</span></div><div className="about-stat wide"><strong>Tailor-Made</strong><span>Venice airport transfers, luxury tours and executive mobility with personalized support.</span></div></div></div></div></section>
