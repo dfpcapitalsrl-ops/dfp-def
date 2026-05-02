@@ -141,7 +141,6 @@ export default function Home() {
                 <div className="experience-body">
                   <h3>{experience.title}</h3>
                   <p>{experience.text}</p>
-                  <a href={experience.href} aria-label={`Learn more about ${experience.title}`}>Learn more</a>
                 </div>
               </article>
             ))}
