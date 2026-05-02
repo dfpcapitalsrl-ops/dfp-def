@@ -95,9 +95,10 @@ export default function Home() {
         <div className="container nav-bar">
           <a href="/" className="brand"><img src="/logo.png" alt="DFP Travels private transfers from Venice" style={{ height: "60px" }} /></a>
           <nav className="nav-links">
-            <a href="#services">Services</a>
-            <a href="#experiences">Experiences</a>
-            <a href="#about">Company</a>
+            <a href="/venice-airport-transfer">Airport Transfer</a>
+            <a href="/venice-water-taxi">Water Taxi</a>
+            <a href="/venice-to-cortina-transfer">Venice to Cortina</a>
+            <a href="/dolomites-tour-from-venice">Dolomites Tour</a>
             <a href="#contact">Contact</a>
           </nav>
           <a className="book-btn" href="mailto:info@dfpcapital.it?subject=Venice%20Private%20Transfer%20Request">Book Now</a>
